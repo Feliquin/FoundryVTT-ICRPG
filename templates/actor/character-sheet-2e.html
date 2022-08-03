@@ -74,6 +74,13 @@
                         <input type="text" name="data.coin.value" value="{{data.data.coin.value}}" data-dtype="Number" />
                     </div>
 
+                    {{!-- Supply --}}
+                    <div class="resource coin">
+                        <label for="data.coin.value" class="resource-label"><i class="fa fa-sack"></i>
+                            {{localize "ICRPG.Supply"}}</label>
+                        <input type="text" name="data.supply.value" value="{{data.data.supply.value}}" data-dtype="Number" />
+                    </div>
+
                     {{!-- Hero Coin --}}
                     <div class="resource herocoin">
                         {{icrpg-assign 'icrpg-herocoin-id' (icrpg-randomid 'icrpg-herocoin-')}}

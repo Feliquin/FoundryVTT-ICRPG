@@ -16,6 +16,7 @@
     "ICRPG.WIS": "WIS",
     "ICRPG.CHA": "CHA",
     "ICRPG.Coin": "Coin",
+    "ICRPG.Supply": "Supply",    
     "ICRPG.HeroCoin": "Hero Coin",
     "ICRPG.Effort": "Effort",
     "ICRPG.EffortBasic": "Basic",

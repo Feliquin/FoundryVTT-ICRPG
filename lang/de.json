@@ -16,6 +16,7 @@
     "ICRPG.WIS": "WE",
     "ICRPG.CHA": "CH",
     "ICRPG.Coin": "Münzen",
+    "ICRPG.Supply": "Vorrat",
     "ICRPG.HeroCoin": "Heldenmünze",
     "ICRPG.Effort": "Aufwand",
     "ICRPG.EffortBasic": "Basis",

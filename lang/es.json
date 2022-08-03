@@ -16,6 +16,7 @@
     "ICRPG.WIS": "SAB",
     "ICRPG.CHA": "CAR",
     "ICRPG.Coin": "Monedas",
+    "ICRPG.Supply": "Supply",
     "ICRPG.HeroCoin": "Moneda del héroe",
     "ICRPG.Effort": "Esfuerzo",
     "ICRPG.EffortBasic": "Básico",

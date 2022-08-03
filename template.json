@@ -115,6 +115,9 @@
       "coin": {
         "value": 0
       },
+      "supply": {
+        "value": 0
+      },
       "dying": {
         "value": 0
       },

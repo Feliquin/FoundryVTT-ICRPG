@@ -16,6 +16,7 @@
     "ICRPG.WIS": "WIJ",
     "ICRPG.CHA": "CHA",
     "ICRPG.Coin": "Munten",
+    "ICRPG.Supply": "Supply",
     "ICRPG.HeroCoin": "Heldenmunt",
     "ICRPG.Effort": "Inspanning",
     "ICRPG.EffortBasic": "Basis",
