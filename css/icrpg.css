@@ -151,8 +151,8 @@ input::-moz-selection {
 }
 
 .icrpg.sheet.actor {
-  min-width: 400px;
-  min-height: 520px;
+  min-width: 420px;
+  min-height: 585px;
   /*character-form: 475px; npc-form: 375px;*/
 }
 
@@ -296,6 +296,7 @@ input::-moz-selection {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-bottom: 2px;
+  position: relative;
 }
 
 .icrpg .resource.resource-header {
@@ -413,6 +414,14 @@ input::-moz-selection {
 
 .icrpg .resource.effort > .resource-label.d4 {
   background-image: url("../images/d4.svg");
+}
+
+.icrpg .resource.grit > .resource-label.d6 {
+  background-image: url("../images/d6.svg");
+}
+
+.icrpg .resource.grit > .resource-label.d8 {
+  background-image: url("../images/d8.svg");
 }
 
 .icrpg .resource.effort > .resource-label.d6 {
