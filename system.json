@@ -2,7 +2,7 @@
   "name": "icrpg",
   "title": "Index Card RPG - Feliquin Fork",
   "description": "Index Card RPG (ICRPG) system for Foundry VTT (base 3.0.4). Forked by Feliquin.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "minimumCoreVersion": "9",
   "compatibleCoreVersion": "9",
   "templateVersion": 2,
