@@ -118,6 +118,12 @@
       "supply": {
         "value": 0
       },
+      "grit": {
+        "value": 1
+      },
+      "gritmax": {
+        "value": 1
+      },
       "dying": {
         "value": 0
       },

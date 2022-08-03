@@ -18,6 +18,7 @@
     "ICRPG.Coin": "Coin",
     "ICRPG.Supply": "Supply",    
     "ICRPG.HeroCoin": "Hero Coin",
+    "ICRPG.Grit": "Grit",
     "ICRPG.Effort": "Effort",
     "ICRPG.EffortBasic": "Basic",
     "ICRPG.EffortWeapon": "Weapons",

@@ -348,6 +348,9 @@ input::-moz-selection {
       -ms-flex: 0 0 75px;
           flex: 0 0 75px;
   margin: 3px 2px 2px 5px;
+  position: relative;
+  top: 1px;
+  line-height: 20px;
 }
 
 .icrpg .resource.stat > .resource-label {

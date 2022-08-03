@@ -76,9 +76,22 @@
 
                     {{!-- Supply --}}
                     <div class="resource coin">
-                        <label for="data.coin.value" class="resource-label"><i class="fa fa-sack"></i>
+                        <label for="data.coin.value" class="resource-label"><i class="fa fa-box"></i>
                             {{localize "ICRPG.Supply"}}</label>
                         <input type="text" name="data.supply.value" value="{{data.data.supply.value}}" data-dtype="Number" />
+                    </div>
+
+                    {{!-- Grit --}}
+                    <div class="resource grit resource-header">
+                        <label for="data.grit.value" class="resource-label rollable" data-roll='1d6'
+                            data-label='{{localize "ICRPG.Grit"}}'>{{localize "ICRPG.Grit"}}</label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input type="text" name="data.grit.value" value="{{data.data.grit.value}}"
+                                data-dtype="Number" />
+                            <span class="separator">/</span>
+                            <input type="text" name="data.gritmax.value" value="{{data.data.gritmax.value}}"
+                                data-dtype="Number" />
+                        </div>
                     </div>
 
                     {{!-- Hero Coin --}}
@@ -156,6 +169,7 @@
                         </div>
                     </div>
 
+                    <!-- 
                     {{!-- Stun --}}
                     <div class="resource health">
                         <label for="data.stun.value" class="resource-label"> {{localize "ICRPG.Stun"}} </label>
@@ -164,6 +178,7 @@
                                 data-dtype="Number" />
                         </div>
                     </div>
+                    -->
 
                     {{!-- Header --}}
                     <div class="resource death resource-header">
