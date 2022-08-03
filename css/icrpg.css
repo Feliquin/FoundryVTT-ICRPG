@@ -386,6 +386,13 @@ input::-moz-selection {
           flex: 0;
 }
 
+.icrpg .resource.grit .resource-label {
+  -webkit-box-flex: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 5px;
+}
+
 .icrpg .resource.effort > .resource-label,
 .icrpg .resource.armor > .resource-label {
   -webkit-box-flex: 1;
@@ -416,11 +423,11 @@ input::-moz-selection {
   background-image: url("../images/d4.svg");
 }
 
-.icrpg .resource.grit > .resource-label.d6 {
+.icrpg .resource.grit .resource-label.d6 {
   background-image: url("../images/d6.svg");
 }
 
-.icrpg .resource.grit > .resource-label.d8 {
+.icrpg .resource.grit .resource-label.d8 {
   background-image: url("../images/d8.svg");
 }
 
