@@ -99,7 +99,7 @@
                             <span class="separator">/</span>
                             <input type="text" name="data.gritmax.value" value="{{data.data.gritmax.value}}"
                                 data-dtype="Number" />
-                            {{#if (ne data.grit.value '0')}}
+                            {{#if (ne data.data.grit.value 0)}}
                                 <a class="resource-label d6 rollable" data-roll='1d6'
                                 data-label='{{localize "ICRPG.Grit"}}'>{{localize "ICRPG.Roll"}}</a>
                             {{/if}}
