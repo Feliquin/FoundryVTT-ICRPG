@@ -34,6 +34,6 @@
   "socket": true,
   "url": "https://github.com/Feliquin/FoundryVTT-ICRPG/",
   "manifest": "https://github.com/Feliquin/FoundryVTT-ICRPG/raw/master/system.json",
-  "download": "https://github.com/Feliquin/FoundryVTT-ICRPG/releases/latest/download/icrpg.zip",
+  "download": "https://github.com/Feliquin/FoundryVTT-ICRPG/archive/refs/heads/master.zip",
   "license": "LICENSE"
 }
