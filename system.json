@@ -1,8 +1,8 @@
 {
   "name": "icrpg",
-  "title": "Index Card RPG",
-  "description": "Index Card RPG (ICRPG) system for Foundry VTT.",
-  "version": "3.0.4",
+  "title": "Index Card RPG - Feliquin Fork",
+  "description": "Index Card RPG (ICRPG) system for Foundry VTT (base 3.0.4). Forked by Feliquin.",
+  "version": "0.1.0",
   "minimumCoreVersion": "9",
   "compatibleCoreVersion": "9",
   "templateVersion": 2,
@@ -25,16 +25,6 @@
       "lang": "de",
       "name": "Deutsch",
       "path": "lang/de.json"
-    },
-    {
-      "lang": "es",
-      "name": "Español",
-      "path": "lang/es.json"
-    },
-    {
-      "lang": "nl",
-      "name": "Nederlands",
-      "path": "lang/nl.json"
     }
   ],
   "gridDistance": 5,
@@ -42,8 +32,8 @@
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": null,
   "socket": true,
-  "url": "https://github.com/jessev14/FoundryVTT-ICRPG/",
-  "manifest": "https://github.com/jessev14/FoundryVTT-ICRPG/raw/master/system.json",
-  "download": "https://github.com/jessev14/FoundryVTT-ICRPG/releases/latest/download/icrpg.zip",
+  "url": "https://github.com/Feliquin/FoundryVTT-ICRPG/",
+  "manifest": "https://github.com/Feliquin/FoundryVTT-ICRPG/raw/master/system.json",
+  "download": "https://github.com/Feliquin/FoundryVTT-ICRPG/releases/latest/download/icrpg.zip",
   "license": "LICENSE"
 }
