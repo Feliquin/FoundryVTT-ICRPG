@@ -151,15 +151,15 @@ input::-moz-selection {
 }
 
 .icrpg.sheet.actor {
-  min-width: 420px;
-  min-height: 585px;
+  min-width: 430px;
+  min-height: 595px;
   /*character-form: 475px; npc-form: 375px;*/
 }
 
 .icrpg.sheet.actor .character-form .attributes-content .resources:first-child {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 40%;
-          flex: 1 0 40%;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
 }
 
 .icrpg.sheet.actor .npc-form .attributes-content .resources:nth-child(1),
