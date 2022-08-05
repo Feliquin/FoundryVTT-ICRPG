@@ -91,7 +91,7 @@
                     </div>
 
                     {{!-- Grit --}}
-                    {{#if (game.settings.get("icrpg", "useGrit"))}}
+                    {{#if (game.settings.icrpg.useGrit)}}
                         <div class="resource grit resource-header">
                             <label for="data.grit.value" class="resource-label" data-label='{{localize "ICRPG.Grit"}}'><i class="fa fa-star"></i> {{localize "ICRPG.Grit"}}</label>
                             <div class="resource-content flexrow flex-center flex-between">
