@@ -220,11 +220,14 @@ Hooks.on("getChatLogEntryContext", (html, options) => {
 });
 
 Hooks.on("renderItemSheet", (app, html, appData) => {
+  console.log('renderItemSheet');
   if (game.settings.get("icrpg", "itemDurability")) html.find(`label[for="data.durability"]`).closest(`div.grid`).remove();
   if (game.settings.get("icrpg", "spellMastery")) html.find(`label[for="data.mastery"]`).closest(`div.grid`).remove();
   if (game.settings.get("icrpg", "abilityMastery")) html.find(`label[for="data.mastery"]`).closest(`div.grid`).remove();
 });
 
 Hooks.on("renderIcrpgCharacterSheet", (app, html, appData) => {
+  console.log('renderIcrpgCharacterSheet');
   if (!game.settings.get("icrpg", "useGrit")) html.find(`.js-grit`).remove();
+  if (!game.settings.get("icrpg", "useSurge")) html.find(`.js-grit`).remove();
 });

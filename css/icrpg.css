@@ -386,6 +386,7 @@ input::-moz-selection {
           flex: 0;
 }
 
+.icrpg .resource.surge .resource-label,
 .icrpg .resource.grit .resource-label {
   -webkit-box-flex: 1;
   background-repeat: no-repeat;
@@ -427,7 +428,7 @@ input::-moz-selection {
   background-image: url("../images/d6.svg");
 }
 
-.icrpg .resource.grit .resource-label.d8 {
+.icrpg .resource.surge .resource-label.d8 {
   background-image: url("../images/d8.svg");
 }
 
