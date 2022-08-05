@@ -151,8 +151,8 @@ input::-moz-selection {
 }
 
 .icrpg.sheet.actor {
-  min-width: 450px;
-  min-height: 600px;
+  min-width: 470px;
+  min-height: 650px;
   /*character-form: 475px; npc-form: 375px;*/
 }
 
@@ -554,6 +554,8 @@ input::-moz-selection {
 .icrpg .resource .value {
   font-weight: bold;
   font-size: larger;
+  font-family: "nusaliver", cursive;
+  color: #bc0000;
   -webkit-filter: drop-shadow(0 0 5px #fff);
           filter: drop-shadow(0 0 5px #fff);
 }

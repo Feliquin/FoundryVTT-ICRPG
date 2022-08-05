@@ -64,8 +64,39 @@
                         </div>
                     </div>
                     {{/with}}
-                    {{/each}}
+                    {{/each}}   
+                </div>
+                <div class="resources">
+                    {{!-- Header --}}
+                    <div class="resource effort resource-header">
+                        <span class="header">{{localize "ICRPG.Effort"}}</span>
+                        <span class="header">{{localize "ICRPG.Base"}}</span>
+                        <span class="header">{{localize "ICRPG.Loot"}}</span>
+                    </div>
 
+                    {{!-- Effort --}}
+                    {{#each (icrpg-array "basic" "weapon" "gun" "magic" "ultimate") as |id|}}
+                    {{#with (lookup ../data.data.effort id) as |eff|}}
+                    <div class="resource effort {{id}}">
+                        <label for="data.effort.{{id}}.value" class="resource-label {{eff.die}} rollable"
+                            data-roll='1{{eff.die}}+{{eff.value}}'
+                            data-label='{{localize (icrpg-concat "ICRPG.Effort" (icrpg-capitalize id))}}'>
+                            {{localize (icrpg-concat "ICRPG.Effort" (icrpg-capitalize id))}}
+                        </label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <span class="value"
+                                name="data.effort.{{id}}.value">{{numberFormat eff.value decimals=0 sign=false}}</span>
+                            <input type="text" name="data.effort.{{id}}.base" value="{{eff.base}}"
+                                data-dtype="Number" />
+                            <span class="base">{{numberFormat eff.loot decimals=0 sign=false}}</span>
+                        </div>
+                    </div>
+                    {{/with}}
+                    {{/each}}
+                </div>
+            </div>
+            <div class="attributes-content grid-2col">
+                <div class="resources">
                     {{!-- Header --}}
                     <div class="resource coin resource-header">
                         <span class="header">
@@ -86,6 +117,12 @@
                         <input type="text" name="data.supply.value" value="{{data.data.supply.value}}" data-dtype="Number" />
                     </div>
 
+                    {{!-- Header --}}
+                    <div class="resource herocoin resource-header">
+                        <span class="header">
+                            <!--{{localize "ICRPG.HeroCoin"}}--></span>
+                    </div>
+
                     {{!-- Hero Coin --}}
                     <div class="resource herocoin">
                         {{icrpg-assign 'icrpg-herocoin-id' (icrpg-randomid 'icrpg-herocoin-')}}
@@ -93,8 +130,60 @@
                             data-dtype="Boolean" id="{{@root.icrpg-herocoin-id}}" />
                         <label for="{{@root.icrpg-herocoin-id}}"></label>
                         <label for="data.herocoin" class="resource-label">{{localize "ICRPG.HeroCoin"}}</span>
+                    </div>     
+                </div>
+                <div class="resources">
+                    {{!-- Header --}}
+                    <div class="resource armor resource-header">
+                        <span class="header">
+                            <!--{{localize "ICRPG.Defense"}}--></span>
                     </div>
 
+                    {{!-- Armor --}}
+                    <div class="resource armor">
+                        <label for="data.armor.value" class="resource-label rollable"
+                            data-roll='1d20+{{icrpg-sum data.data.stats.con.value data.data.armor.loot}}'
+                            data-label='{{localize "ICRPG.Defense"}}'>
+                            {{localize "ICRPG.Defense"}} </label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <span class="value">{{icrpg-sum data.data.stats.con.value data.data.armor.loot}}</span>
+                            <input type="text" title='{{localize "ICRPG.CON"}}' value="{{data.data.stats.con.value}}" data-dtype="Number" disabled/>
+                            <span class="base">{{data.data.armor.loot}}</span>
+                        </div>
+                    </div>
+
+                    {{!-- HP --}}
+                    <div class="resource health">
+                        <label for="data.health.value" class="resource-label"> {{localize "ICRPG.HP"}} </label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input type="text" name="data.health.value" value="{{data.data.health.value}}"
+                                data-dtype="Number" />
+                            <span class="separator">/</span>
+                            <input type="text" name="data.health.max" value="{{data.data.health.max}}" data-dtype="Number" />
+                        </div>
+                    </div>
+
+                    {{!-- Header --}}
+                    <div class="resource death resource-header">
+                        <span class="header">
+                            <!--{{localize "ICRPG.Death"}}--></span>
+                    </div>
+
+                    {{!-- Death --}}
+                    <div class="resource death">
+                        <label for="data.dying.value" class="resource-label death-d4 rollable" data-roll='1d4'
+                            data-label='{{localize "ICRPG.Dying"}}'>{{localize "ICRPG.Dying"}}</label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input type="text" name="data.dying.value" value="{{data.data.dying.value}}"
+                                data-dtype="Number" />
+                            <a class="resource-label revive rollable" data-roll='1d20'
+                                data-label='{{localize "ICRPG.Revive"}}'>{{localize "ICRPG.Revive"}}</a>
+                        </div>
+                    </div>                       
+                </div>
+            </div>
+            <div class="attributes-content grid-2col">
+                <div class="resources">
                     {{!-- Grit --}}
                     <div class="resource grit js-grit resource-header">
                         <label for="data.grit.value" class="resource-label" data-label='{{localize "ICRPG.Grit"}}'><i class="fa fa-star"></i> {{localize "ICRPG.Grit"}}</label>
@@ -125,101 +214,18 @@
                                 data-label='{{localize "ICRPG.Surge"}}'>{{localize "ICRPG.Roll"}}</a>
                             {{/if}}
                         </div>
-                    </div>    
+                    </div>  
                 </div>
                 <div class="resources">
-                    {{!-- Header --}}
-                    <div class="resource effort resource-header">
-                        <span class="header">{{localize "ICRPG.Effort"}}</span>
-                        <span class="header">{{localize "ICRPG.Base"}}</span>
-                        <span class="header">{{localize "ICRPG.Loot"}}</span>
-                    </div>
-
-                    {{!-- Effort --}}
-                    {{#each (icrpg-array "basic" "weapon" "gun" "magic" "ultimate") as |id|}}
-                    {{#with (lookup ../data.data.effort id) as |eff|}}
-                    <div class="resource effort {{id}}">
-                        <label for="data.effort.{{id}}.value" class="resource-label {{eff.die}} rollable"
-                            data-roll='1{{eff.die}}+{{eff.value}}'
-                            data-label='{{localize (icrpg-concat "ICRPG.Effort" (icrpg-capitalize id))}}'>
-                            {{localize (icrpg-concat "ICRPG.Effort" (icrpg-capitalize id))}}
-                        </label>
+                    {{!-- Mastery --}}
+                    <div class="resource d20mastery js-d20mastery resource-header">
+                        <label for="data.d20mastery.value" class="resource-label" data-label='{{localize "ICRPG.Mastery"}}'><i class="fa fa-star"></i> {{localize "ICRPG.Mastery"}}</label>
                         <div class="resource-content flexrow flex-center flex-between">
-                            <span class="value"
-                                name="data.effort.{{id}}.value">{{numberFormat eff.value decimals=0 sign=false}}</span>
-                            <input type="text" name="data.effort.{{id}}.base" value="{{eff.base}}"
-                                data-dtype="Number" />
-                            <span class="base">{{numberFormat eff.loot decimals=0 sign=false}}</span>
-                        </div>
-                    </div>
-                    {{/with}}
-                    {{/each}}
-
-                    {{!-- Header --}}
-                    <div class="resource armor resource-header">
-                        <span class="header">
-                            <!--{{localize "ICRPG.Defense"}}--></span>
-                    </div>
-
-                    {{!-- Armor --}}
-                    <div class="resource armor">
-                        <label for="data.armor.value" class="resource-label rollable"
-                            data-roll='1d20+{{icrpg-sum data.data.stats.con.value data.data.armor.loot}}'
-                            data-label='{{localize "ICRPG.Defense"}}'>
-                            {{localize "ICRPG.Defense"}} </label>
-                        <div class="resource-content flexrow flex-center flex-between">
-                            <span class="value">{{armor.value}}</span> 
-                            <input type="text" title='{{localize "ICRPG.CON"}}' value="{{data.data.stats.con.value}}" data-dtype="Number" disabled/>
-                            <span class="base">{{data.data.armor.loot}}</span>
-                        </div>
-                    </div>
-
-                    {{!-- Header --}}
-                    <div class="resource health resource-header">
-                        <span class="header">
-                            <!--{{localize "ICRPG.Health"}}--></span>
-                    </div>
-
-                    {{!-- HP --}}
-                    <div class="resource health">
-                        <label for="data.health.value" class="resource-label"> {{localize "ICRPG.HP"}} </label>
-                        <div class="resource-content flexrow flex-center flex-between">
-                            <input type="text" name="data.health.value" value="{{data.data.health.value}}"
-                                data-dtype="Number" />
+                            <input type="text" name="data.d20mastery.value" value="{{data.data.d20mastery.value}}" data-dtype="Number" />
                             <span class="separator">/</span>
-                            <input type="text" name="data.health.max" value="{{data.data.health.max}}" data-dtype="Number" />
+                            <input type="text" name="data.d20masterymax.value" value="{{data.data.d20masterymax.value}}" data-dtype="Number" disabled />
                         </div>
-                    </div>
-
-                    <!-- 
-                    {{!-- Stun --}}
-                    <div class="resource health">
-                        <label for="data.stun.value" class="resource-label"> {{localize "ICRPG.Stun"}} </label>
-                        <div class="resource-content flexrow flex-center flex-between">
-                            <input type="text" name="data.stun.value" value="{{data.data.stun.value}}"
-                                data-dtype="Number" />
-                        </div>
-                    </div>
-                    -->
-
-                    {{!-- Header --}}
-                    <div class="resource death resource-header">
-                        <span class="header">
-                            <!--{{localize "ICRPG.Death"}}--></span>
-                    </div>
-
-                    {{!-- Death --}}
-                    <div class="resource death">
-                        <label for="data.dying.value" class="resource-label death-d4 rollable" data-roll='1d4'
-                            data-label='{{localize "ICRPG.Dying"}}'>{{localize "ICRPG.Dying"}}</label>
-                        <div class="resource-content flexrow flex-center flex-between">
-                            <input type="text" name="data.dying.value" value="{{data.data.dying.value}}"
-                                data-dtype="Number" />
-                            <a class="resource-label revive rollable" data-roll='1d20'
-                                data-label='{{localize "ICRPG.Revive"}}'>{{localize "ICRPG.Revive"}}</a>
-                        </div>
-                    </div>
-
+                    </div>   
                 </div>
             </div>
         </div>

@@ -230,5 +230,5 @@ Hooks.on("renderItemSheet", (app, html, appData) => {
 Hooks.on("renderIcrpgCharacterSheet", (app, html, appData) => {
   console.log('renderIcrpgCharacterSheet');
   if (!game.settings.get("icrpg", "useGrit")) html.find(`.js-grit`).remove();
-  if (!game.settings.get("icrpg", "useSurge")) html.find(`.js-grit`).remove();
+  if (!game.settings.get("icrpg", "useSurge")) html.find(`.js-surge`).remove();
 });
