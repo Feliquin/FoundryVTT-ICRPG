@@ -192,33 +192,25 @@
                     
                     {{!-- Grit --}}
                     <div class="resource grit js-grit">
-                        <label for="data.grit.value" class="resource-label" data-label='{{localize "ICRPG.Grit"}}'><i class="fa fa-star"></i> {{localize "ICRPG.Grit"}}</label>
+                        <label for="data.grit.value" class="resource-label d6 {{#if (gt data.data.grit.value 0)}}rollable{{/if}}" data-roll='{{#if (gt data.data.grit.value 0)}}1d6{{/if}}' data-label='{{localize "ICRPG.Grit"}}'>{{localize "ICRPG.Grit"}}</label>
                         <div class="resource-content flexrow flex-center flex-between">
                             <input type="text" name="data.grit.value" value="{{data.data.grit.value}}"
                                 data-dtype="Number" />
                             <span class="separator">/</span>
                             <input type="text" name="data.gritmax.value" value="{{data.data.gritmax.value}}"
                                 data-dtype="Number" />
-                            {{#if (gt data.data.grit.value 0)}}
-                                <a class="resource-label d6 rollable" data-roll='1d6'
-                                data-label='{{localize "ICRPG.Grit"}}'>{{localize "ICRPG.Roll"}}</a>
-                            {{/if}}
                         </div>
                     </div>    
 
                     {{!-- Surge --}}
                     <div class="resource surge js-surge">
-                        <label for="data.surge.value" class="resource-label" data-label='{{localize "ICRPG.Surge"}}'><i class="fa fa-star"></i> {{localize "ICRPG.Surge"}}</label>
+                        <label for="data.surge.value" class="resource-label d8 {{#if (gt data.data.surge.value 0)}}rollable{{/if}}" data-roll='{{#if (gt data.data.surge.value 0)}}1d8{{/if}}'' data-label='{{localize "ICRPG.Surge"}}'>{{localize "ICRPG.Surge"}}</label>
                         <div class="resource-content flexrow flex-center flex-between">
                             <input type="text" name="data.surge.value" value="{{data.data.surge.value}}"
                                 data-dtype="Number" />
                             <span class="separator">/</span>
                             <input type="text" name="data.surgemax.value" value="{{data.data.surgemax.value}}"
                                 data-dtype="Number" />
-                            {{#if (gt data.data.surge.value 0)}}
-                                <a class="resource-label d8 rollable" data-roll='1d8'
-                                data-label='{{localize "ICRPG.Surge"}}'>{{localize "ICRPG.Roll"}}</a>
-                            {{/if}}
                         </div>
                     </div>  
                 </div>
