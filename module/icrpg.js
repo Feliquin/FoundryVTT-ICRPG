@@ -32,6 +32,7 @@ Hooks.once('init', async function () {
     decimals: 2
   };
   CONFIG.SpellTypes = {
+    Sorcery: "ICRPG.Sorcery",
     Arcane: "ICRPG.Arcane",
     Holy: "ICRPG.Holy",
     Infernal: "ICRPG.Infernal"

@@ -28,7 +28,7 @@ To highlight some of its **features** that might not be obvious at first glance:
    -Weapons have OPTIONAL Durability and Mastery scores.  When a weapon has 0 Durability, attempting to attack with it will produce an error message.  
    -Armor has a Defense value that modifies the actor’s Defense score when equipped. Armor also has OPTIONAL Durability and Mastery scores. When that durability hits 0, the armor provides no Defense benefit.
    -Item, Weapon, and Armor Durability are OPTIONAL rules (See below) and are manually updated in the individual item in the “Loot” tab for each character. 
-   -Spells have the 3 BASIC spell types (Holy, Infernal, Arcane)   
+   -Spells have the 3 BASIC spell types (Holy, Infernal, Arcane, Sorcery)   
    -Spells also have OPTIONAL spell mastery values that can be updated to track spell-level mastery.
    -Spell and Weapon Effort values can be customized inside each item (e.g. 1d8 instead of 1d6 for weapon effort, etc)
    -Abilities have OPTIONAL mastery values that can be updated to track skill/ability mastery. 

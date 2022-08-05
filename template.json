@@ -136,7 +136,14 @@
       "dying": {
         "value": 0
       },
+      "d20mastery": {
+        "value": 0
+      },
+      "d20masterymax": {
+        "value": 20
+      },
       "mastery": {
+        "Sorcery": 0,
         "Arcane": 0,
         "Holy": 0,
         "Infernal": 0
@@ -287,7 +294,7 @@
       "quantity": 1,
       "spellLevel": 1,
       "spellPower": 1,
-      "spellType": "Arcane",
+      "spellType": "Sorcery",
       "equipped": true
     },
     "gun": {
