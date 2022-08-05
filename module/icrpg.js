@@ -224,3 +224,7 @@ Hooks.on("renderItemSheet", (app, html, appData) => {
   if (game.settings.get("icrpg", "spellMastery")) html.find(`label[for="data.mastery"]`).closest(`div.grid`).remove();
   if (game.settings.get("icrpg", "abilityMastery")) html.find(`label[for="data.mastery"]`).closest(`div.grid`).remove();
 });
+
+Hooks.on("renderIcrpgCharacterSheet", (app, html, appData) => {
+  if (!game.settings.get("icrpg", "useGrit")) html.find(`.js-grit`).remove();
+});
