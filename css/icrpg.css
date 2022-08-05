@@ -306,8 +306,8 @@ input::-moz-selection {
 .icrpg .resource.resource-header.stat > .header:first-child,
 .icrpg .resource.resource-header.coin > .header:first-child {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 35px;
-          flex: 1 0 35px;
+      -ms-flex: 1 0 100px;
+          flex: 1 0 100px;
   text-align: left;
   padding-left: 5px;
   max-width: 100%;
@@ -340,8 +340,8 @@ input::-moz-selection {
 .icrpg .resource .resource-label {
   font-family: "nusaliver", cursive;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 75px;
-          flex: 0 0 75px;
+      -ms-flex: 0 0 80px;
+          flex: 0 0 80px;
   margin: 3px 2px 2px 5px;
   position: relative;
   top: 1px;
@@ -350,14 +350,14 @@ input::-moz-selection {
 
 .icrpg .resource.stat > .resource-label {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 35px;
-          flex: 1 0 35px;
+      -ms-flex: 1 0 100px;
+          flex: 1 0 100px;
 }
 
 .icrpg .resource.coin > .resource-label {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 85px;
-          flex: 1 0 85px;
+      -ms-flex: 1 0 100px;
+          flex: 1 0 100px;
 }
 
 .icrpg .resource.coin input {
@@ -366,8 +366,14 @@ input::-moz-selection {
 
 .icrpg .resource.mastery > .resource-label {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 107px;
-          flex: 1 0 107px;
+      -ms-flex: 1 0 100px;
+          flex: 1 0 100px;
+}
+
+.icrpg .resource.herocoin > .resource-label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100px;
+          flex: 1 0 100px;
 }
 
 .icrpg .resource.mastery input {
@@ -400,8 +406,8 @@ input::-moz-selection {
 
 .icrpg .resource.health > .resource-label {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 85px;
-          flex: 1 0 85px;
+      -ms-flex: 1 0 100px;
+          flex: 1 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   padding-left: 30px;
@@ -555,7 +561,7 @@ input::-moz-selection {
   font-weight: bold;
   font-size: larger;
   font-family: "nusaliver", cursive;
-  color: #bc0000;
+  color: #004c8c;
   -webkit-filter: drop-shadow(0 0 5px #fff);
           filter: drop-shadow(0 0 5px #fff);
 }
