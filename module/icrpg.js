@@ -117,6 +117,24 @@ Hooks.once('init', async function () {
     default: false
   });
 
+  game.settings.register("icrpg", "useGrit", {
+    name: "ICRPG.useGritSetting",
+    hint: "",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: true
+  });
+
+  game.settings.register("icrpg", "useSurge", {
+    name: "ICRPG.useSurgeSetting",
+    hint: "",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: false
+  });
+
   game.settings.register("icrpg", "heartHP", {
     name: "ICRPG.heartHPsetting",
     scope: "world",

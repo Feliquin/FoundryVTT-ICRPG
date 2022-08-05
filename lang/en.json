@@ -86,6 +86,8 @@
     "ICRPG.itemDurabilitySetting": "Disable Item Durability",
     "ICRPG.spellMasterySetting": "Disable Spell Mastery",
     "ICRPG.abilityMasterySetting": "Disable Ability Mastery",
+    "ICRPG.useGritSetting": "Use Grit (D6)",
+    "ICRPG.useSurgeSetting": "Use Surge (D8)",
     "ICRPG.Shield": "Shield",
     "ICRPG.Size": "Size",
     "ICRPG.Fighter": "Fighter",

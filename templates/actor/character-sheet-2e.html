@@ -91,20 +91,22 @@
                     </div>
 
                     {{!-- Grit --}}
-                    <div class="resource grit resource-header">
-                        <label for="data.grit.value" class="resource-label" data-label='{{localize "ICRPG.Grit"}}'><i class="fa fa-star"></i> {{localize "ICRPG.Grit"}}</label>
-                        <div class="resource-content flexrow flex-center flex-between">
-                            <input type="text" name="data.grit.value" value="{{data.data.grit.value}}"
-                                data-dtype="Number" />
-                            <span class="separator">/</span>
-                            <input type="text" name="data.gritmax.value" value="{{data.data.gritmax.value}}"
-                                data-dtype="Number" />
-                            {{#if (ne data.data.grit.value 0)}}
-                                <a class="resource-label d6 rollable" data-roll='1d6'
-                                data-label='{{localize "ICRPG.Grit"}}'>{{localize "ICRPG.Roll"}}</a>
-                            {{/if}}
-                        </div>
-                    </div>                    
+                    {{#if (game.settings.get("icrpg", "useGrit"))}}
+                        <div class="resource grit resource-header">
+                            <label for="data.grit.value" class="resource-label" data-label='{{localize "ICRPG.Grit"}}'><i class="fa fa-star"></i> {{localize "ICRPG.Grit"}}</label>
+                            <div class="resource-content flexrow flex-center flex-between">
+                                <input type="text" name="data.grit.value" value="{{data.data.grit.value}}"
+                                    data-dtype="Number" />
+                                <span class="separator">/</span>
+                                <input type="text" name="data.gritmax.value" value="{{data.data.gritmax.value}}"
+                                    data-dtype="Number" />
+                                {{#if (gt data.data.grit.value 0)}}
+                                    <a class="resource-label d6 rollable" data-roll='1d6'
+                                    data-label='{{localize "ICRPG.Grit"}}'>{{localize "ICRPG.Roll"}}</a>
+                                {{/if}}
+                            </div>
+                        </div>    
+                    {{/if}}                
                 </div>
                 <div class="resources">
 
