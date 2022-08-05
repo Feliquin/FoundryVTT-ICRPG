@@ -13,6 +13,11 @@
             <div class="resource story">
                 <input type="text" name="data.story" value="{{data.data.story}}" placeholder='{{localize "ICRPG.Story"}}' />
             </div>
+            <div class="resource grid grid-3col">
+                <input type="text" name="data.love" value="{{data.data.love}}" placeholder='{{localize "ICRPG.Love"}}' />
+                <input type="text" name="data.hate" value="{{data.data.hate}}" placeholder='{{localize "ICRPG.Hate"}}' />
+                <input type="text" name="data.fear" value="{{data.data.fear}}" placeholder='{{localize "ICRPG.Fear"}}' />
+            </div>
         </div>
     </header>
 
@@ -31,7 +36,7 @@
 
         {{!-- Attributes Tab --}}
         <div class="tab attributes" data-group="primary" data-tab="attributes">
-            <div class="attributes-content">
+            <div class="attributes-content grid-2col">
                 <div class="resources">
 
                     {{!-- Header --}}
@@ -123,7 +128,6 @@
                     </div>    
                 </div>
                 <div class="resources">
-
                     {{!-- Header --}}
                     <div class="resource effort resource-header">
                         <span class="header">{{localize "ICRPG.Effort"}}</span>

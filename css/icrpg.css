@@ -151,8 +151,8 @@ input::-moz-selection {
 }
 
 .icrpg.sheet.actor {
-  min-width: 430px;
-  min-height: 595px;
+  min-width: 450px;
+  min-height: 600px;
   /*character-form: 475px; npc-form: 375px;*/
 }
 
@@ -265,12 +265,6 @@ input::-moz-selection {
 
 .icrpg .story > input {
   width: 100%;
-}
-
-.icrpg .attributes-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .icrpg .attributes-content .resources {
