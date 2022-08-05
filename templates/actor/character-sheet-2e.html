@@ -91,22 +91,36 @@
                     </div>
 
                     {{!-- Grit --}}
-                    {{#if (game.settings.get("icrpg", "useGrit"))}}
-                        <div class="resource grit js-grit resource-header">
-                            <label for="data.grit.value" class="resource-label" data-label='{{localize "ICRPG.Grit"}}'><i class="fa fa-star"></i> {{localize "ICRPG.Grit"}}</label>
-                            <div class="resource-content flexrow flex-center flex-between">
-                                <input type="text" name="data.grit.value" value="{{data.data.grit.value}}"
-                                    data-dtype="Number" />
-                                <span class="separator">/</span>
-                                <input type="text" name="data.gritmax.value" value="{{data.data.gritmax.value}}"
-                                    data-dtype="Number" />
-                                {{#if (gt data.data.grit.value 0)}}
-                                    <a class="resource-label d6 rollable" data-roll='1d6'
-                                    data-label='{{localize "ICRPG.Grit"}}'>{{localize "ICRPG.Roll"}}</a>
-                                {{/if}}
-                            </div>
-                        </div>    
-                    {{/if}}                
+                    <div class="resource grit js-grit resource-header">
+                        <label for="data.grit.value" class="resource-label" data-label='{{localize "ICRPG.Grit"}}'><i class="fa fa-star"></i> {{localize "ICRPG.Grit"}}</label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input type="text" name="data.grit.value" value="{{data.data.grit.value}}"
+                                data-dtype="Number" />
+                            <span class="separator">/</span>
+                            <input type="text" name="data.gritmax.value" value="{{data.data.gritmax.value}}"
+                                data-dtype="Number" />
+                            {{#if (gt data.data.grit.value 0)}}
+                                <a class="resource-label d6 rollable" data-roll='1d6'
+                                data-label='{{localize "ICRPG.Grit"}}'>{{localize "ICRPG.Roll"}}</a>
+                            {{/if}}
+                        </div>
+                    </div>    
+
+                    {{!-- Surge --}}
+                    <div class="resource surge js-surge resource-header">
+                        <label for="data.surge.value" class="resource-label" data-label='{{localize "ICRPG.Surge"}}'><i class="fa fa-star"></i> {{localize "ICRPG.Surge"}}</label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input type="text" name="data.surge.value" value="{{data.data.surge.value}}"
+                                data-dtype="Number" />
+                            <span class="separator">/</span>
+                            <input type="text" name="data.surgemax.value" value="{{data.data.surgemax.value}}"
+                                data-dtype="Number" />
+                            {{#if (gt data.data.surge.value 0)}}
+                                <a class="resource-label d6 rollable" data-roll='1d6'
+                                data-label='{{localize "ICRPG.Surge"}}'>{{localize "ICRPG.Roll"}}</a>
+                            {{/if}}
+                        </div>
+                    </div>    
                 </div>
                 <div class="resources">
 

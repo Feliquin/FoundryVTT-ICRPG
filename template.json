@@ -124,6 +124,12 @@
       "gritmax": {
         "value": 1
       },
+      "surge": {
+        "value": 1
+      },
+      "surgemax": {
+        "value": 1
+      },
       "dying": {
         "value": 0
       },
