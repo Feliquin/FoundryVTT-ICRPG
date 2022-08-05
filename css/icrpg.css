@@ -364,6 +364,7 @@ input::-moz-selection {
   text-align: right;
 }
 
+.icrpg .resource.d20mastery > .resource-label,
 .icrpg .resource.mastery > .resource-label {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100px;
@@ -384,6 +385,13 @@ input::-moz-selection {
   -webkit-box-flex: 0;
       -ms-flex: 0;
           flex: 0;
+}
+
+.icrpg .resource.surge .separator,
+.icrpg .resource.grit .separator {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 75px;
+          flex: 1 0 75px;
 }
 
 .icrpg .resource.surge .resource-label,
