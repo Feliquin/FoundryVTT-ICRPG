@@ -188,7 +188,7 @@ Hooks.once('init', async function () {
     if (data.action === "positionGlobalTimer") {
       game.icrpg.globalTimer.setPosition({
         left: data.position.left * (window.innerWidth - 100),
-        top: data.position.top * (window.innerHeight - 200),
+        top: data.position.top * (window.innerHeight - 100),
       });
     }    
   });

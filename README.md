@@ -38,6 +38,12 @@ To highlight some of its **features** that might not be obvious at first glance:
 - Skill checks, Attribute Checks, Spell Checks and Attack Rolls should all go against that Global Variable (Scene Target). 
 - The ability to modify that value at any time
 - A large, position-able d20 that reflects the Global Target 
+- Target Cards by VANGMAR: ICRPG Target Cards (PL / EN) - https://www.drivethrurpg.com/product/290540/ICRPG-Target-Cards-PL---EN
+
+**Global Timer:**
+- A global timer that holds a value from 1-99
+- The ability to modify that value at any time
+- A large, position-able window that reflects the Global Timer
 
 **Basic Automation:**
 - Players can now target NPCs or other Players
@@ -49,14 +55,20 @@ To highlight some of its **features** that might not be obvious at first glance:
 **New Character Sheet:**
 - New Locked and Unlocked versions of the Character Sheet.  Unlocked allows players to manually edit Base, Loot and other fields.  Locked uses Armor and Abilities to modify the Loot values (not modifiable directly)
 - Added Stun Points for Core rules Spell Cost
+- Added Grit and Surge (configurable in game settings)
+- Added Mastery counter
+- Added Love, Hate, Fear fields
+- Changes in the general styling of the sheet
 
 **Optional System Rules (set in the System Features menu):** 
 - Allow a DM to have Attack and Spell rolls use an NPCs Defense instead of the Global Target
 - Disable OPTIONAL Item Durability
 - Disable OPTIONAL Spell Mastery 
 - Disable OPTIONAL Ability Mastery
+- Use Grit (D6) as in Hard Suite
+- Use Surge (D8) as in Altered State
 
-The following languages are currently supported: **English**, **Spanish**, **German** and **Dutch**. Reach out if you feel like contributing!
+The following languages are currently supported: **English** and **German**. Reach out if you feel like contributing!
 
 ## Installation
 
@@ -73,14 +85,12 @@ Many thanks to Brandish Gilhelm (also known as Hankerin Ferinale) of [Runehammer
 
 Many thanks to Tom for starting this whole thing moving along.
 
-Countless thanks to Jesse (Enso) for the heavy lifting with the code.
-
-Thanks to Diego Martinez for the Spanish localization!
+Countless thanks to Jesse (Enso) for the heavy lifting with the code this is based on.
 
 ## Links
 
 For more information, visit the following pages:
 * [Foundry VTT Package](https://foundryvtt.com/packages/icrpg/)
-* [GitHub System Repository](https://github.com/jessev14/FoundryVTT-ICRPG/)
+* [GitHub System Base Repository](https://github.com/jessev14/FoundryVTT-ICRPG/)
 
-Enjoy!
+Ha’Baka!

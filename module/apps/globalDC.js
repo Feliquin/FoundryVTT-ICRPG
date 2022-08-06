@@ -27,8 +27,8 @@ export class IcrpgGlobalDC extends Application {
                 socket.emit("system.icrpg", {
                     action: "positionGlobalDC",
                     position: {
-                        left: position.left / (window.innerWidth - 100),
-                        top: position.top / (window.innerHeight - 100)
+                        left: position.left / (window.innerWidth - 128),
+                        top: position.top / (window.innerHeight - 200)
                     }
                 });
                 game.settings.set("icrpg", "globalDCposition", position);
@@ -37,7 +37,7 @@ export class IcrpgGlobalDC extends Application {
             html[0].addEventListener("contextmenu", function (event) {
                 const globalDCinput = Object.values(ui.windows).find(w => w.id === "icrpg-globalDCinput");
                 if (globalDCinput) {
-                    globalDCinput.setPosition({ top: game.icrpg.globalDC.position.top, left: game.icrpg.globalDC.position.left + 110 });
+                    globalDCinput.setPosition({ top: game.icrpg.globalDC.position.top, left: game.icrpg.globalDC.position.left + 138 });
                     globalDCinput.bringToTop();
                 }
                 else new GlobalDCConfig().render(true);
@@ -47,7 +47,7 @@ export class IcrpgGlobalDC extends Application {
 
     async _render(force = false, options = {}) {
         await super._render(force, options);
-        this.element.css({ "height": "100px", "width": "100px" });
+        this.element.css({ "height": "128px", "width": "200px" });
         if (game.settings.get("icrpg", "globalDCvisible")) this.element.css("display", "");
         else this.element.css("display", "none");
 
@@ -69,7 +69,7 @@ class GlobalDCConfig extends Application {
             template: "/systems/icrpg/templates/globalDC/global-DC-config.html",
             title: game.i18n.localize("ICRPG.GlobalDC"),
             width: "130px",
-            left: globalDCapp.position.left + 110,
+            left: globalDCapp.position.left + 138,
             top: globalDCapp.position.top
         });
     }
