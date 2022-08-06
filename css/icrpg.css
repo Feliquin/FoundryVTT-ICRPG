@@ -29,6 +29,15 @@ input::-moz-selection {
   background: #aaa;
 }
 
+.grid-2-3-col {
+  grid-template-columns: 2fr 3fr;
+  gap: 25px;
+  display: -ms-grid;
+  display: grid;
+  margin: 5px 0;
+  padding: 0;
+}
+
 .grid,
 .grid-2col {
   display: -ms-grid;
@@ -270,16 +279,30 @@ input::-moz-selection {
   margin-top: 7px;
 }
 
-.icrpg .resource.resource-header.stat > .header:first-child,
-.icrpg .resource.resource-header.coin > .header:first-child {
+.icrpg .resource.resource-header.stat > .header:first-child {
   -webkit-box-flex: 1;
-  flex: 1 0 100px;
+  flex: 1 0 65px;
   text-align: left;
   padding-left: 5px;
   max-width: 100%;
 }
 
-.icrpg .resource.resource-header.effort > .header:first-child,
+.icrpg .resource.resource-header.coin > .header:first-child {
+  -webkit-box-flex: 1;
+  flex: 1 0 65px;
+  text-align: left;
+  padding-left: 5px;
+  max-width: 100%;
+}
+
+.icrpg .resource.resource-header.effort > .header:first-child {
+  -webkit-box-flex: 1;
+  flex: 1 0 135px;
+  text-align: left;
+  padding-left: 35px;
+  max-width: 100%;
+}
+
 .icrpg .resource.resource-header.armor > .header:first-child,
 .icrpg .resource.resource-header.health > .header:first-child,
 .icrpg .resource.resource-header.stun > .header:first-child,
@@ -313,12 +336,20 @@ input::-moz-selection {
 
 .icrpg .resource.stat > .resource-label {
   -webkit-box-flex: 1;
-  flex: 1 0 100px;
+  flex: 1 0 65px;
+}
+
+.icrpg .resource.effort > .resource-label {
+  -webkit-box-flex: 1;
+  flex: 1 0 135px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 30px;
 }
 
 .icrpg .resource.coin > .resource-label {
   -webkit-box-flex: 1;
-  flex: 1 0 100px;
+  flex: 1 0 65px;
 }
 
 .icrpg .resource.coin input {
@@ -361,7 +392,6 @@ input::-moz-selection {
   padding-left: 5px;
 }
 
-.icrpg .resource.effort > .resource-label,
 .icrpg .resource.armor > .resource-label {
   -webkit-box-flex: 1;
   flex: 1 0 100px;
