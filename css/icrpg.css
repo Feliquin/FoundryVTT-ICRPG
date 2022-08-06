@@ -739,6 +739,7 @@ input::-moz-selection {
   background-size: contain;
   background-position-x: 1px;
   justify-content: center;
+  background-color: #888888;
 }
 
 #icrpg-globalDC .container.target-11 {
@@ -850,6 +851,7 @@ input::-moz-selection {
   font-size: 72px;
   color: #dc0000;
   line-height: 105px;
+  text-align: center;
 }
 
 
