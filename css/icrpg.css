@@ -349,7 +349,7 @@ input::-moz-selection {
 
 .icrpg .resource.coin > .resource-label {
   -webkit-box-flex: 1;
-  flex: 1 0 65px;
+  flex: 1 0 95px;
 }
 
 .icrpg .resource.coin input {

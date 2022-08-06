@@ -1,0 +1,1516 @@
+{
+  "name": "Hard Suit Tech Loot",
+  "img": "icons/svg/d10-grey.svg",
+  "description": "Hard Suit Tech Loot",
+  "results": [
+    {
+      "_id": "19rfeo2wp1m0kwh9",
+      "type": 0,
+      "text": "Jug of Source: 3 uses, drink to add ULTIMATE to your next SORCERY EFFORT",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 1,
+      "rangeH": 1
+    },
+    {
+      "_id": "7uv3bdfi9t3o9kin",
+      "type": 0,
+      "text": "Exo-Patch Kit: 3 uses, instantly repair 1 HIT on a hard suit with no roll",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 2,
+      "rangeH": 2
+    },
+    {
+      "_id": "r60e21rvqp8togtr",
+      "type": 0,
+      "text": "Kinetic Ball: An alloy sphere, internal mechanism lets it roll or bounce perpetually",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 3,
+      "rangeH": 3
+    },
+    {
+      "_id": "ub3dpq1567rqm2bw",
+      "type": 0,
+      "text": "Canister Bullet: A large rifle shell that can be filled with any substance",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 4,
+      "rangeH": 4
+    },
+    {
+      "_id": "9c1m8kvt13cer16y",
+      "type": 0,
+      "text": "Spore Sample: Tiny glowing cells contained in a transparent vial",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 5,
+      "rangeH": 5
+    },
+    {
+      "_id": "k1y60s4qbvkn69ly",
+      "type": 0,
+      "text": "Mag Scope: Roll EASY when making micro-level investigations",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 6,
+      "rangeH": 6
+    },
+    {
+      "_id": "hlr8nmjg7y57grf8",
+      "type": 0,
+      "text": "Lever Hook: An actuated crow bar, +5 STR when prying or forcing doors or locks",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 7,
+      "rangeH": 7
+    },
+    {
+      "_id": "u9h7n8e7sdn6seum",
+      "type": 0,
+      "text": "Grapple Hand: Attach to cable, makes all grapple hook actions EASY",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 8,
+      "rangeH": 8
+    },
+    {
+      "_id": "dy7bsdw69o600qfc",
+      "type": 0,
+      "text": "Limb Brace: A jointed cloth sleeve with alloy links, +1 STR, +1 DEFENSE",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 9,
+      "rangeH": 9
+    },
+    {
+      "_id": "znxqah3a18z3bj18",
+      "type": 0,
+      "text": "Arbor Boots: Tree-climber's cleats, movement in trees is always EASY",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 10,
+      "rangeH": 10
+    },
+    {
+      "_id": "z62v9gx3h1rm1pri",
+      "type": 0,
+      "text": "Micro Breather: A pocket size respirator unit",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 11,
+      "rangeH": 11
+    },
+    {
+      "_id": "im99ieo54vrfuehu",
+      "type": 0,
+      "text": "Jelly Grease: 5 uses of a super-resilient lubricant that sticks to surfaces",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 12,
+      "rangeH": 12
+    },
+    {
+      "_id": "y9vm00la1doix8te",
+      "type": 0,
+      "text": "Hoist Sled: A super-strong lifter that can be rolled into position, 20m cable",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 13,
+      "rangeH": 13
+    },
+    {
+      "_id": "4h1l33o6a26eh57d",
+      "type": 0,
+      "text": "Segmented Rope: A cord with tubular steel links, 100m, unbreakable",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 14,
+      "rangeH": 14
+    },
+    {
+      "_id": "5pgadntiyn6gels5",
+      "type": 0,
+      "text": "Collapse Pole: This 10' steel pole compresses into a zero-space pod",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 15,
+      "rangeH": 15
+    },
+    {
+      "_id": "k1w46ahl4gfdgus9",
+      "type": 0,
+      "text": "Piston Brace: An actuated post with incredible strength, used to hold structures",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 16,
+      "rangeH": 16
+    },
+    {
+      "_id": "vu036mox2feqbb7x",
+      "type": 0,
+      "text": "Weapon Bipod: Attach to a ranged weapon, it's shots are EASY at any distance",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 17,
+      "rangeH": 17
+    },
+    {
+      "_id": "gfmaf73y1vfz6q4n",
+      "type": 0,
+      "text": "Beam Alignment Lens: Energy EFFORT focused here deliver double the roll",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 18,
+      "rangeH": 18
+    },
+    {
+      "_id": "b99pyvnahfv1h1xo",
+      "type": 0,
+      "text": "Starchart: A map of stars, all navigation rolls are EASY using this aid",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 19,
+      "rangeH": 19
+    },
+    {
+      "_id": "94myjeaad3bxrgpk",
+      "type": 0,
+      "text": "Glue Foam: 3 uses, spray adhesive that forms a 2 HEART bond",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 20,
+      "rangeH": 20
+    },
+    {
+      "_id": "gz961lzo13n835ex",
+      "type": 0,
+      "text": "Field Medikit: 3 uses, heal a human or demi-human to full HP with a WIS roll",
+      "weight": 1,
+      "range": [
+        21,
+        21
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 21,
+      "rangeH": 21
+    },
+    {
+      "_id": "qbvxjr2eof0seyua",
+      "type": 0,
+      "text": "Flame Cartridge: Attach to a ranged weapon, its hits now ignite the target",
+      "weight": 1,
+      "range": [
+        22,
+        22
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 22,
+      "rangeH": 22
+    },
+    {
+      "_id": "doiwb957q3v5y81e",
+      "type": 0,
+      "text": "Split Arrow Set: 10 quiver, these arrows split in two when fired, hit two targets",
+      "weight": 1,
+      "range": [
+        23,
+        23
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 23,
+      "rangeH": 23
+    },
+    {
+      "_id": "jpu3xywoz9oj736t",
+      "type": 0,
+      "text": "Common Weapon Scope: Add +2 to rolls with this ranged weapon",
+      "weight": 1,
+      "range": [
+        24,
+        24
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 24,
+      "rangeH": 24
+    },
+    {
+      "_id": "gzwuchfyndlfl1yu",
+      "type": 0,
+      "text": "Variform Shield: An adaptive shield of hex plates, +2 DEFENSE, +1 DEX",
+      "weight": 1,
+      "range": [
+        25,
+        25
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 25,
+      "rangeH": 25
+    },
+    {
+      "_id": "qw59ar7lflq8qx1q",
+      "type": 0,
+      "text": "Durafab Hood: A cloth cowl with eye protection, ignore visual impairments",
+      "weight": 1,
+      "range": [
+        26,
+        26
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 26,
+      "rangeH": 26
+    },
+    {
+      "_id": "uvlqxkpwa1uu44mj",
+      "type": 0,
+      "text": "Cycle Gloves: Insulated gloves, transfer 2D20% POWER from suit to suit",
+      "weight": 1,
+      "range": [
+        27,
+        27
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 27,
+      "rangeH": 27
+    },
+    {
+      "_id": "pvtp7weu7h2d2s1s",
+      "type": 0,
+      "text": "Suit Harness: Attach to a hard suit, accommodates two passengers",
+      "weight": 1,
+      "range": [
+        28,
+        28
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 28,
+      "rangeH": 28
+    },
+    {
+      "_id": "xpwp9ct8hlkwuamm",
+      "type": 0,
+      "text": "Infantry Helmet: A standard alloy helm, +2 DEFENSE",
+      "weight": 1,
+      "range": [
+        29,
+        29
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 29,
+      "rangeH": 29
+    },
+    {
+      "_id": "loov2vl1y93lxptc",
+      "type": 0,
+      "text": "Infantry Vest: Ablative vest inflicts D4 damage on successful melee attackers",
+      "weight": 1,
+      "range": [
+        30,
+        30
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 30,
+      "rangeH": 30
+    },
+    {
+      "_id": "iwqyvhxkczm44wm5",
+      "type": 0,
+      "text": "RF Monocle: Heat scope sees heat through solid materials",
+      "weight": 1,
+      "range": [
+        31,
+        31
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 31,
+      "rangeH": 31
+    },
+    {
+      "_id": "6s161jji2wxuwc84",
+      "type": 0,
+      "text": "Portable Dehydrator: Extract moisture from any small object instantly",
+      "weight": 1,
+      "range": [
+        32,
+        32
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 32,
+      "rangeH": 32
+    },
+    {
+      "_id": "l4p2modlwqb1znvl",
+      "type": 0,
+      "text": "Demi-Human Analysis Kit: One drop of blood reveals lineage, properties",
+      "weight": 1,
+      "range": [
+        33,
+        33
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 33,
+      "rangeH": 33
+    },
+    {
+      "_id": "o4dfrl9o8pmab7hl",
+      "type": 0,
+      "text": "Data Canister (Topic): Choose a specific topic, this unit has exhaustive files",
+      "weight": 1,
+      "range": [
+        34,
+        34
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 34,
+      "rangeH": 34
+    },
+    {
+      "_id": "xmx5g4ys5mozlbhe",
+      "type": 0,
+      "text": "Grub Lamp: An orb of luminous grub worms, fish cannot resist the light",
+      "weight": 1,
+      "range": [
+        35,
+        35
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 35,
+      "rangeH": 35
+    },
+    {
+      "_id": "iuvj1pz6niktqdpq",
+      "type": 0,
+      "text": "Drill Screw Kit: Autonomous screws that will drill into any material",
+      "weight": 1,
+      "range": [
+        36,
+        36
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 36,
+      "rangeH": 36
+    },
+    {
+      "_id": "k3nbciropf90uw9z",
+      "type": 0,
+      "text": "Smart Compass: Roll INT to describe a location, the compass will lead you there",
+      "weight": 1,
+      "range": [
+        37,
+        37
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 37,
+      "rangeH": 37
+    },
+    {
+      "_id": "9qkyrjt5oqb6mnzr",
+      "type": 0,
+      "text": "Comm Recorder: Record a brief hologram message, stored in a small puck",
+      "weight": 1,
+      "range": [
+        38,
+        38
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 38,
+      "rangeH": 38
+    },
+    {
+      "_id": "j2im0f9o5s406jpy",
+      "type": 0,
+      "text": "Birdo: An odd child's toy that moves and behaves like a flightless bird",
+      "weight": 1,
+      "range": [
+        39,
+        39
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 39,
+      "rangeH": 39
+    },
+    {
+      "_id": "xhzhprsm5iyulhvu",
+      "type": 0,
+      "text": "Tattoo Pen: Perform tattoos in 1/2 the time as stick and poke",
+      "weight": 1,
+      "range": [
+        40,
+        40
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 40,
+      "rangeH": 40
+    },
+    {
+      "_id": "gxscmbhn6wh9ywa6",
+      "type": 0,
+      "text": "Hard Suit Ski Plate: Large paddles alloy a suit to traverse mud, sand, or snow",
+      "weight": 1,
+      "range": [
+        41,
+        41
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 41,
+      "rangeH": 41
+    },
+    {
+      "_id": "1sc7vw5lkv8tp29l",
+      "type": 0,
+      "text": "Anchor Bolts: Pneumatic bolts can bind a suit to a surface with 2 HEART bond",
+      "weight": 1,
+      "range": [
+        42,
+        42
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 42,
+      "rangeH": 42
+    },
+    {
+      "_id": "t8352tryh9f45y45",
+      "type": 0,
+      "text": "Teacher Module: A meditation guide, spend time with it to gain +1 WIS or INT",
+      "weight": 1,
+      "range": [
+        43,
+        43
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 43,
+      "rangeH": 43
+    },
+    {
+      "_id": "ox11mo31daqdonsa",
+      "type": 0,
+      "text": "Retrieval Spider: A small robotic insect that can retrieve small objects",
+      "weight": 1,
+      "range": [
+        44,
+        44
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 44,
+      "rangeH": 44
+    },
+    {
+      "_id": "urf4ct3ym9ftxdhw",
+      "type": 0,
+      "text": "Hard Suit Control Kit: A joystick console and dongle to remotely drive a suit",
+      "weight": 1,
+      "range": [
+        45,
+        45
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 45,
+      "rangeH": 45
+    },
+    {
+      "_id": "4j1syypasmuv8hjx",
+      "type": 0,
+      "text": "Source Grenade: 3 count, explodes with 3D100% ambient POWER to absorb",
+      "weight": 1,
+      "range": [
+        46,
+        46
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 46,
+      "rangeH": 46
+    },
+    {
+      "_id": "79rj6tud0fjtpk2g",
+      "type": 0,
+      "text": "Shock Lance: A NEAR length pole with electric shocker tip, painful",
+      "weight": 1,
+      "range": [
+        47,
+        47
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 47,
+      "rangeH": 47
+    },
+    {
+      "_id": "w3d2133qh6kp6xsp",
+      "type": 0,
+      "text": "Shimmer Coveralls: A jump suit that reflects local color, +3 to stealth or hide*",
+      "weight": 1,
+      "range": [
+        48,
+        48
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 48,
+      "rangeH": 48
+    },
+    {
+      "_id": "svwrm0z9pm061di0",
+      "type": 0,
+      "text": "Accel Capsules: 3 count, adrenaline boosters, add 2D4 to any STAT for 1 ROUND",
+      "weight": 1,
+      "range": [
+        49,
+        49
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 49,
+      "rangeH": 49
+    },
+    {
+      "_id": "ntg7mzef1jmmcb34",
+      "type": 0,
+      "text": "Ion Sword: A luminous blade of energy, double EFFORT when slow-cutting",
+      "weight": 1,
+      "range": [
+        50,
+        50
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 50,
+      "rangeH": 50
+    },
+    {
+      "_id": "an1olv13v9fldz7c",
+      "type": 0,
+      "text": "Hard Suit Armor: +2 DEF, Attach to any PART on a suit with no tools",
+      "weight": 1,
+      "range": [
+        51,
+        51
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 51,
+      "rangeH": 51
+    },
+    {
+      "_id": "p9dry1efx9gu0nb0",
+      "type": 0,
+      "text": "Hard Suit Shield: +4 DEF, Attach to an arm on a hard suit with no tools",
+      "weight": 1,
+      "range": [
+        52,
+        52
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 52,
+      "rangeH": 52
+    },
+    {
+      "_id": "sfz76sdnhofceomt",
+      "type": 0,
+      "text": "Whip Sword: Cruel segmented blade, if hit roll CON or be stunned 1 ROUND",
+      "weight": 1,
+      "range": [
+        53,
+        53
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 53,
+      "rangeH": 53
+    },
+    {
+      "_id": "n27mqxi8fa3up0i1",
+      "type": 0,
+      "text": "Portable Bot Gun: A self-aiming tripod with autorifle, +D4 to hit, 1 HEART",
+      "weight": 1,
+      "range": [
+        54,
+        54
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 54,
+      "rangeH": 54
+    },
+    {
+      "_id": "u2bocl4bshmgllxo",
+      "type": 0,
+      "text": "Ion Shield: Hardened energy, +3 DEFENSE, occupies no inventory space",
+      "weight": 1,
+      "range": [
+        55,
+        55
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 55,
+      "rangeH": 55
+    },
+    {
+      "_id": "xmhd98kjw0afdb6z",
+      "type": 0,
+      "text": "Repulsor Node: Place and activate this canister, 18 STR to get CLOSE to it",
+      "weight": 1,
+      "range": [
+        56,
+        56
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 56,
+      "rangeH": 56
+    },
+    {
+      "_id": "jajl8rzye800ue0f",
+      "type": 0,
+      "text": "Lantern Fluid: Extract from a lantern goat, a brightly luminous liquid",
+      "weight": 1,
+      "range": [
+        57,
+        57
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 57,
+      "rangeH": 57
+    },
+    {
+      "_id": "lt13wz0ec25o08ji",
+      "type": 0,
+      "text": "Smoke Arrows: Quiver of 10, release a FAR cloud of grey smoke on impact",
+      "weight": 1,
+      "range": [
+        58,
+        58
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 58,
+      "rangeH": 58
+    },
+    {
+      "_id": "vooumdt3sdfkka3d",
+      "type": 0,
+      "text": "Mirror Shield: Reflective, +2 DEFENSE, returns ENERGY attacks to origin",
+      "weight": 1,
+      "range": [
+        59,
+        59
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 59,
+      "rangeH": 59
+    },
+    {
+      "_id": "c2ao1xamt5nfqdet",
+      "type": 0,
+      "text": "Pierce Shell Rifle: Lever-action, huge, 1 ROUND load, delivers 1 HIT with no roll",
+      "weight": 1,
+      "range": [
+        60,
+        60
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 60,
+      "rangeH": 60
+    },
+    {
+      "_id": "j1nz06sncxhx9l35",
+      "type": 0,
+      "text": "Ice Gun: Fires liquid darts of realm freeze, encasing victims for 1 ROUND",
+      "weight": 1,
+      "range": [
+        61,
+        61
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 61,
+      "rangeH": 61
+    },
+    {
+      "_id": "1nd6nhou28m5l8ga",
+      "type": 0,
+      "text": "Magnet Thumper: A hefty sidearm that fires supermagnetic discs",
+      "weight": 1,
+      "range": [
+        62,
+        62
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 62,
+      "rangeH": 62
+    },
+    {
+      "_id": "6hwz4fzktmrpq297",
+      "type": 0,
+      "text": "Hard Suit Regen Capsule: Shove this into the controls to recover D100% POWER",
+      "weight": 1,
+      "range": [
+        63,
+        63
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 63,
+      "rangeH": 63
+    },
+    {
+      "_id": "g98m8tardhgl34il",
+      "type": 0,
+      "text": "Hard Suit Cargo Pack: Carry 10 slots of LOOT on a hard suit's back",
+      "weight": 1,
+      "range": [
+        64,
+        64
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 64,
+      "rangeH": 64
+    },
+    {
+      "_id": "777zr52356fi5ilm",
+      "type": 0,
+      "text": "Source Siphon: A rubbery tendril, draw up to 50% POWER from a CLOSE suit a",
+      "weight": 1,
+      "range": [
+        65,
+        65
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 65,
+      "rangeH": 65
+    },
+    {
+      "_id": "63yb8c04mjnrs037",
+      "type": 0,
+      "text": "Hard Suit Weather Rod: Gain D100% power when exposed to lightning",
+      "weight": 1,
+      "range": [
+        66,
+        66
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 66,
+      "rangeH": 66
+    },
+    {
+      "_id": "ml7dquz469oagn6z",
+      "type": 0,
+      "text": "Hard Suit Jump Thruster: Do not expend POWER when leaping or dashing",
+      "weight": 1,
+      "range": [
+        67,
+        67
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 67,
+      "rangeH": 67
+    },
+    {
+      "_id": "wtcktbydzkfnnvgf",
+      "type": 0,
+      "text": "Hard Suit Fast-Hatch: A snap-release canopy, enter or exit a suit instantly a",
+      "weight": 1,
+      "range": [
+        68,
+        68
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 68,
+      "rangeH": 68
+    },
+    {
+      "_id": "8tdpmh7z9xi4fowg",
+      "type": 0,
+      "text": "HIT Armor: For personal use, can withstand 3 hard suit 3 style HITS",
+      "weight": 1,
+      "range": [
+        69,
+        69
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 69,
+      "rangeH": 69
+    },
+    {
+      "_id": "te99rsme7kmaguya",
+      "type": 0,
+      "text": "Regen Keg: A cask of SOURCE, 1 use, all CLOSE hard suits gain 2D20% POWER",
+      "weight": 1,
+      "range": [
+        70,
+        70
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 70,
+      "rangeH": 70
+    },
+    {
+      "_id": "5gxsr4i3w8sjvc62",
+      "type": 0,
+      "text": "Dome Shield: Deploy to emit a NEAR radius dome of energy with 3 HITS",
+      "weight": 1,
+      "range": [
+        71,
+        71
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 71,
+      "rangeH": 71
+    },
+    {
+      "_id": "8i43z2uuh2os3jpa",
+      "type": 0,
+      "text": "Hard Suit Limb Bolt: Fit to a hard suit to add any extra limb",
+      "weight": 1,
+      "range": [
+        72,
+        72
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 72,
+      "rangeH": 72
+    },
+    {
+      "_id": "lk1nn8z0kjdugmpa",
+      "type": 0,
+      "text": "Dive Hoist: A wheeled tripod, strong enough to raise/lower a hard suit 100 feet",
+      "weight": 1,
+      "range": [
+        73,
+        73
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 73,
+      "rangeH": 73
+    },
+    {
+      "_id": "rxvu8hd9pga5nt5x",
+      "type": 0,
+      "text": "Displacer Pistol: A sphere-tipped ray gun, ENERGY EFFORT, if 10 roll again",
+      "weight": 1,
+      "range": [
+        74,
+        74
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 74,
+      "rangeH": 74
+    },
+    {
+      "_id": "73hw0j4fq1dxjzg9",
+      "type": 0,
+      "text": "Metatech Claw: A living gauntlet-weapon. +2 STR, +2 WPN EFFORT",
+      "weight": 1,
+      "range": [
+        75,
+        75
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 75,
+      "rangeH": 75
+    },
+    {
+      "_id": "8rtz1dtonjlv0919",
+      "type": 0,
+      "text": "Gravity Hammer: HARD to use, but reduces a human-size foe to 1 HP",
+      "weight": 1,
+      "range": [
+        76,
+        76
+      ],
+      "drawn": true,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 76,
+      "rangeH": 76
+    },
+    {
+      "_id": "2czb7ifjzs1ek9ko",
+      "type": 0,
+      "text": "Folding Roller: A wagon that collapses into a suitcase, 10 inventory spaces",
+      "weight": 10,
+      "range": [
+        77,
+        77
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 77,
+      "rangeH": 77
+    },
+    {
+      "_id": "d08io2fuh1pl1jfb",
+      "type": 0,
+      "text": "Hard Suit Antler Kit: Fit to a give a hard suit antlers, ramming weapon",
+      "weight": 1,
+      "range": [
+        78,
+        78
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 78,
+      "rangeH": 78
+    },
+    {
+      "_id": "kbl7h8z3xqhlg9pe",
+      "type": 0,
+      "text": "Dart Belt: Endless throwing darts, throw again on a roll of 15+",
+      "weight": 1,
+      "range": [
+        79,
+        79
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 79,
+      "rangeH": 79
+    },
+    {
+      "_id": "orlyu35g56k3c5eh",
+      "type": 0,
+      "text": "Metatech Bubblehelm (ecosystem): Gain abilities of a native to an ecosystem",
+      "weight": 1,
+      "range": [
+        80,
+        80
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 80,
+      "rangeH": 80
+    },
+    {
+      "_id": "a55zym6skpthqvxw",
+      "type": 0,
+      "text": "Metatech Power Grab: A large hand gauntlet, +1 DEFENSE, +3 STR",
+      "weight": 1,
+      "range": [
+        81,
+        81
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 81,
+      "rangeH": 81
+    },
+    {
+      "_id": "q5ce3o5zteqzw5de",
+      "type": 0,
+      "text": "Metatech Seed: A proto-cell of metatech, grow into any desired form in 1 day",
+      "weight": 1,
+      "range": [
+        82,
+        82
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 82,
+      "rangeH": 82
+    },
+    {
+      "_id": "gkblwg4d1es4qkl9",
+      "type": 0,
+      "text": "Missile Loader Unit: A small articulated arm, missile boxes reload in 1 ROUND 1",
+      "weight": 1,
+      "range": [
+        83,
+        83
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 83,
+      "rangeH": 83
+    },
+    {
+      "_id": "8j88d7cj0id0e5bi",
+      "type": 0,
+      "text": "Metatech Talon Greaves: Living clawed boots, +1 DEFENSE, +2 DEX",
+      "weight": 1,
+      "range": [
+        84,
+        84
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 84,
+      "rangeH": 84
+    },
+    {
+      "_id": "z7d0hp26b8lp7tnn",
+      "type": 0,
+      "text": "Torch Engine: A powerful flame thrower, reaches FAR, ignites anything",
+      "weight": 1,
+      "range": [
+        85,
+        85
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 85,
+      "rangeH": 85
+    },
+    {
+      "_id": "sfd9sf5yr5og7u7e",
+      "type": 0,
+      "text": "Hard Suit Telescoping Arm: PART, modify any existing arm to extend 50 feet",
+      "weight": 1,
+      "range": [
+        86,
+        86
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 86,
+      "rangeH": 86
+    },
+    {
+      "_id": "ugrzc8mbhtf3tubz",
+      "type": 0,
+      "text": "Geneboost Injector: 1 use, gain +1 to any STAT",
+      "weight": 1,
+      "range": [
+        87,
+        87
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 87,
+      "rangeH": 87
+    },
+    {
+      "_id": "d3onlkiiu6iovxks",
+      "type": 0,
+      "text": "Bolt Sword: A blocky square blade, HARD to use, hits all NEAR foes",
+      "weight": 1,
+      "range": [
+        88,
+        88
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 88,
+      "rangeH": 88
+    },
+    {
+      "_id": "ze60wjte2mcwap8w",
+      "type": 0,
+      "text": "Nanovault: A pocket dimension stores LOOT, occupies 1 space, holds 20",
+      "weight": 1,
+      "range": [
+        89,
+        89
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 89,
+      "rangeH": 89
+    },
+    {
+      "_id": "6x0lmqm6tl9p34is",
+      "type": 0,
+      "text": "Survey Drone: A flying metatech pod you 'see through'",
+      "weight": 1,
+      "range": [
+        90,
+        90
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 90,
+      "rangeH": 90
+    },
+    {
+      "_id": "aspnr2jev6nogl91",
+      "type": 0,
+      "text": "Omnigon Cannon: Fires geometric form of hardened energy of your design",
+      "weight": 1,
+      "range": [
+        91,
+        91
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 91,
+      "rangeH": 91
+    },
+    {
+      "_id": "yqart8mjlzblvgcl",
+      "type": 0,
+      "text": "Disruptor Pistol: A sphere-tipped 'ray gun,' damage dealt cannot be healed",
+      "weight": 1,
+      "range": [
+        92,
+        92
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 92,
+      "rangeH": 92
+    },
+    {
+      "_id": "4tyc4v2da4wdd5ww",
+      "type": 0,
+      "text": "Projectile Boost Module: Modify any projectile weapon to do ULTIMATE",
+      "weight": 1,
+      "range": [
+        93,
+        93
+      ],
+      "drawn": true,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 93,
+      "rangeH": 93
+    },
+    {
+      "_id": "skzd196zx5csds1u",
+      "type": 0,
+      "text": "Metatech Shell Helmet: A large, armored helm, +5 DEFENSE, -1 DEX",
+      "weight": 1,
+      "range": [
+        94,
+        94
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 94,
+      "rangeH": 94
+    },
+    {
+      "_id": "bf0enhebcifmshyl",
+      "type": 0,
+      "text": "Synthetic Heart Stone: Gain a HEART, can use repair type actions to heal",
+      "weight": 1,
+      "range": [
+        95,
+        95
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 95,
+      "rangeH": 95
+    },
+    {
+      "_id": "bch9ewcstdrwf5c9",
+      "type": 0,
+      "text": "Hard Suit PART: Find 1 random hard suit PART",
+      "weight": 1,
+      "range": [
+        96,
+        96
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 96,
+      "rangeH": 96
+    },
+    {
+      "_id": "o273d8gytgh5dq5g",
+      "type": 0,
+      "text": "Hard Suit PARTS: Find 1 random hard suit part and 1 random core PART",
+      "weight": 1,
+      "range": [
+        97,
+        97
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 97,
+      "rangeH": 97
+    },
+    {
+      "_id": "qibym34vlt5vyerf",
+      "type": 0,
+      "text": "Hard Suit Property Bolt: An attachable unit to grant a random frame property",
+      "weight": 1,
+      "range": [
+        98,
+        98
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 98,
+      "rangeH": 98
+    },
+    {
+      "_id": "pw4y60vzb9eogrfv",
+      "type": 0,
+      "text": "Collapsible Hard Suit: A randomly outfitted hard suit that folds into a suitcase",
+      "range": [
+        99,
+        99
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 99,
+      "rangeH": 99
+    },
+    {
+      "_id": "057gfeajvosbzx2o",
+      "type": 0,
+      "text": "Nano Hard Suit: A super small hard suit, just over 5 feet tall",
+      "range": [
+        100,
+        100
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/chest.svg",
+      "rangeL": 100,
+      "rangeH": 100
+    }
+  ],
+  "formula": "d100",
+  "replacement": false,
+  "displayRoll": true,
+  "flags": {
+    "exportSource": {
+      "world": "ic-test",
+      "system": "icrpg",
+      "coreVersion": "9.269",
+      "systemVersion": "0.1.1"
+    }
+  }
+}

@@ -13,6 +13,7 @@ import { IcrpgUtility } from "./utility.js";
 import { IcrpgActiveEffect } from "./active-effect.js";
 import { IcrpgCharacterSheet2Eunlocked } from "./actor/character-sheet-2e-unlocked.js";
 import { IcrpgGlobalDC } from "./apps/globalDC.js";
+import { IcrpgGlobalTimer } from "./apps/globalTimer.js";
 import {IcrpgChatMessage } from "./chatMessage.js";
 
 Hooks.once('init', async function () {
@@ -152,6 +153,13 @@ Hooks.once('init', async function () {
         top: data.position.top * (window.innerHeight - 100),
       });
     }
+
+    if (data.action === "positionGlobalTimer") {
+      game.icrpg.globalTimer.setPosition({
+        left: data.position.left * (window.innerWidth - 100),
+        top: data.position.top * (window.innerHeight - 200),
+      });
+    }    
   });
 
   // Register sheet application classes
@@ -172,6 +180,9 @@ Hooks.once('init', async function () {
 Hooks.once("ready", () => {
   // Create global DC application and store outside of ui.windows
   game.icrpg.globalDC = new IcrpgGlobalDC().render(true, { left: game.settings.get("icrpg", "globalDCposition").left, top: game.settings.get("icrpg", "globalDCposition").top, width: 200, height: 200 });
+  
+  // Create global Timer application and store outside of ui.windows
+  game.icrpg.globalTimer = new IcrpgGlobalTimer().render(true, { left: game.settings.get("icrpg", "globalTimerposition").left, top: game.settings.get("icrpg", "globalTimerposition").top, width: 200, height: 200 });
 });
 
 // Add global DC visibility toggle control button
@@ -186,6 +197,15 @@ Hooks.on("getSceneControlButtons", controls => {
     toggle: true,
     active: game.settings.get("icrpg", "globalDCvisible"),
     onClick: toggle => game.settings.set("icrpg", "globalDCvisible", toggle)
+  });
+
+  bar.tools.push({
+    name: "Global Timer",
+    title: game.i18n.localize("ICRPG.GlobalTimer"),
+    icon: "fas fa-clock",
+    toggle: true,
+    active: game.settings.get("icrpg", "globalTimervisible"),
+    onClick: toggle => game.settings.set("icrpg", "globalTimervisible", toggle)
   });
 });
 
