@@ -82,6 +82,37 @@ Hooks.once('init', async function () {
     onChange: () => game.icrpg.globalDC.render()
   });
 
+  game.settings.register("icrpg", "globalTimer", {
+    name: "",
+    hint: "",
+    scope: "world",
+    config: false,
+    type: Number,
+    default: 4,
+    onChange: () => game.icrpg.globalTimer.render()
+  });
+
+  game.settings.register("icrpg", "globalTimerposition", {
+    name: "",
+    hint: "",
+    scope: "world",
+    config: false,
+    type: Object,
+    default: {
+      left: window.innerWidth - 200,
+      top: 5
+    }
+  });
+
+  game.settings.register("icrpg", "globalTimervisible", {
+    name: "",
+    hint:"",
+    scope: "world",
+    type: Boolean,
+    default: false,
+    onChange: () => game.icrpg.globalTimer.render()
+  });
+
   // Optional rules
   game.settings.register("icrpg", "NPCdefense", {
     name: "ICRPG.NPCdefense",
