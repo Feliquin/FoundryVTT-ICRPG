@@ -47,7 +47,7 @@ export class IcrpgGlobalDC extends Application {
 
     async _render(force = false, options = {}) {
         await super._render(force, options);
-        this.element.css({ "height": "128px", "width": "200px" });
+        this.element.css({ "height": "200px", "width": "128px" });
         if (game.settings.get("icrpg", "globalDCvisible")) this.element.css("display", "");
         else this.element.css("display", "none");
 

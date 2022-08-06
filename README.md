@@ -74,10 +74,16 @@ The following languages are currently supported: **English** and **German**. Rea
 
 In Foundry VTT, on the Configuration and Setup's **Game Systems** sheet, click the **Install System** button at the bottom, scroll down to **Index Card RPG** and click **Install**.
 
-Alternatively, use the following **Manifest URL** to install the game system:
+Or, use the following **Manifest URL** to install the game system:
+```
+https://github.com/Feliquin/FoundryVTT-ICRPG/raw/master/system.json
+```
+
+Alternatively, use the original **Manifest URL** to install the game system written by Jesse:
 ```
 https://github.com/jessev14/FoundryVTT-ICRPG/raw/master/system.json
 ```
+
 
 ## Attribution
 

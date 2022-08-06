@@ -180,8 +180,8 @@ Hooks.once('init', async function () {
   socket.on("system.icrpg", data => {
     if (data.action === "positionGlobalDC") {
       game.icrpg.globalDC.setPosition({
-        left: data.position.left * (window.innerWidth - 100),
-        top: data.position.top * (window.innerHeight - 100),
+        left: data.position.left * (window.innerWidth - 128),
+        top: data.position.top * (window.innerHeight - 200),
       });
     }
 

@@ -718,10 +718,6 @@ input::-moz-selection {
 
 #icrpg-globalDC .window-content {
   padding: 0;
-  background-image: url("/icons/svg/d20-grey.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 1px;
   overflow: hidden;
 }
 
@@ -732,9 +728,109 @@ input::-moz-selection {
 
 #icrpg-globalDC .container .child {
   font-size: 72px;
-  color: white;
+  color: transparent;
   line-height: 105px;
 }
+
+#icrpg-globalDC .container {
+  display: flex;
+  background-image: url("../images/Target-10.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 1px;
+  justify-content: center;
+}
+
+#icrpg-globalDC .container.target-11 {
+  display: flex;
+  background-image: url("../images/Target-11.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 1px;
+  justify-content: center;
+}
+
+#icrpg-globalDC .container.target-12 {
+  display: flex;
+  background-image: url("../images/Target-12.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 1px;
+  justify-content: center;
+}
+
+#icrpg-globalDC .container.target-13 {
+  display: flex;
+  background-image: url("../images/Target-13.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 1px;
+  justify-content: center;
+}
+
+#icrpg-globalDC .container.target-14 {
+  display: flex;
+  background-image: url("../images/Target-14.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 1px;
+  justify-content: center;
+}
+
+#icrpg-globalDC .container.target-15 {
+  display: flex;
+  background-image: url("../images/Target-15.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 1px;
+  justify-content: center;
+}
+
+#icrpg-globalDC .container.target-16 {
+  display: flex;
+  background-image: url("../images/Target-16.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 1px;
+  justify-content: center;
+}
+
+#icrpg-globalDC .container.target-17 {
+  display: flex;
+  background-image: url("../images/Target-17.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 1px;
+  justify-content: center;
+}
+
+#icrpg-globalDC .container.target-18 {
+  display: flex;
+  background-image: url("../images/Target-18.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 1px;
+  justify-content: center;
+}
+
+#icrpg-globalDC .container.target-19 {
+  display: flex;
+  background-image: url("../images/Target-19.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 1px;
+  justify-content: center;
+}
+
+#icrpg-globalDC .container.target-20 {
+  display: flex;
+  background-image: url("../images/Target-20.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 1px;
+  justify-content: center;
+}
+
 
 /* Global Timer */
 #icrpg-globalTimer .window-header {
@@ -743,115 +839,20 @@ input::-moz-selection {
 
 #icrpg-globalTimer .window-content {
   padding: 0;
+  background-image: url("../images/Timer.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 1px;  
   overflow: hidden;
 }
 
-#icrpg-globalTimer .container {
-  display: flex;
-  background-image: url("/images/Target-10.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 1px;
-  justify-content: center;
-}
-
-#icrpg-globalTimer .container.target-11 {
-  display: flex;
-  background-image: url("/images/Target-11.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 1px;
-  justify-content: center;
-}
-
-#icrpg-globalTimer .container.target-12 {
-  display: flex;
-  background-image: url("/images/Target-12.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 1px;
-  justify-content: center;
-}
-
-#icrpg-globalTimer .container.target-13 {
-  display: flex;
-  background-image: url("/images/Target-13.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 1px;
-  justify-content: center;
-}
-
-#icrpg-globalTimer .container.target-14 {
-  display: flex;
-  background-image: url("/images/Target-14.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 1px;
-  justify-content: center;
-}
-
-#icrpg-globalTimer .container.target-15 {
-  display: flex;
-  background-image: url("/images/Target-15.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 1px;
-  justify-content: center;
-}
-
-#icrpg-globalTimer .container.target-16 {
-  display: flex;
-  background-image: url("/images/Target-16.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 1px;
-  justify-content: center;
-}
-
-#icrpg-globalTimer .container.target-17 {
-  display: flex;
-  background-image: url("/images/Target-17.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 1px;
-  justify-content: center;
-}
-
-#icrpg-globalTimer .container.target-18 {
-  display: flex;
-  background-image: url("/images/Target-18.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 1px;
-  justify-content: center;
-}
-
-#icrpg-globalTimer .container.target-19 {
-  display: flex;
-  background-image: url("/images/Target-19.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 1px;
-  justify-content: center;
-}
-
-#icrpg-globalTimer .container.target-20 {
-  display: flex;
-  background-image: url("/images/Target-20.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 1px;
-  justify-content: center;
-}
-
-
 #icrpg-globalTimer .container .child {
   font-size: 72px;
-  color: white;
+  color: #dc0000;
   line-height: 105px;
-  opacity: 0;
 }
+
+
 
 /* Roll Pass/Fail Flagging */
 h4.dice-total.icrpg-pass {
