@@ -388,27 +388,23 @@
                     </div>
 
                     {{!-- Hard Suit Stats --}}
-                    {{#each (icrpg-array "str" "dex" "con") as |id|}}
-                    {{#with (lookup ../data.data.hardsuit id) as |stat|}}
-                    <div class="resource stat {{id}}">
-                        <label for="data.hardsuit.{{id}}.value" class="resource-label rollable"
-                            data-roll='1d20+{{icrpg-sum data.hardsuit.{{id}}.base data.hardsuit.{{id}}.loot}}'
-                            data-label='{{localize (icrpg-concat "ICRPG." (icrpg-toUpperCase id))}}'>
-                            {{localize (icrpg-concat "ICRPG." (icrpg-toUpperCase id))}}
+                    <div class="resource stat str">
+                        <label for="data.hardsuit.str.value" class="resource-label rollable"
+                            data-roll='1d20+{{icrpg-sum data.hardsuit.str.base data.hardsuit.str.loot}}'
+                            data-label='{{localize "ICRPG.STR"}}'>
+                            {{localize "ICRPG.STR"}}
                         </label>
                         <div class="resource-content flexrow flex-center flex-between">
                             <span class="value"
-                                name="data.hardsuit.{{id}}.value">{{numberFormat {{icrpg-sum data.hardsuit.{{id}}.base data.hardsuit.{{id}}.loot}} decimals=0 sign=false}}</span>
-                            <input type="text" name="data.hardsuit.{{id}}.base" value="{{stat.base}}"
+                                name="data.hardsuit.str.value">{{numberFormat {{icrpg-sum data.hardsuit.str.base data.hardsuit.str.loot}} decimals=0 sign=false}}</span>
+                            <input type="text" name="data.hardsuit.str.base" value="{{stat.base}}"
                                 data-dtype="Number" />
-                            <input type="text" name="data.hardsuit.{{id}}.loot" value="{{stat.loot}}"
+                            <input type="text" name="data.hardsuit.str.loot" value="{{stat.loot}}"
                                 data-dtype="Number" />
                         </div>
                     </div>
-                    {{/with}}
-                    {{/each}}   
 
-                   {{!-- Header --}}
+                    {{!-- Header --}}
                     <div class="resource stat resource-header">
                         <span class="header">{{localize "ICRPG.Stats"}}</span>
                         <span class="header">{{localize "ICRPG.Base"}}</span>
