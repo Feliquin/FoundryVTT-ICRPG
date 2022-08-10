@@ -90,10 +90,19 @@
       },
       "hardsuit": {
         "str": {
-          "value": 0
+          "value": 0,
+          "loot": 0,
+          "base": 0
         },
         "dex": {
-          "value": 0
+          "value": 0,
+          "loot": 0,
+          "base": 0
+        },
+        "con": {
+          "value": 0,
+          "loot": 0,
+          "base": 0
         },
         "base": {
           "value": 0
@@ -109,6 +118,29 @@
         },
         "ultimate": {
           "value": 0
+        },
+        "hitcore": {
+          "value": 0,
+          "max": 3
+        },
+        "hitright": {
+          "value": 0,
+          "max": 3
+        },
+        "hitleft": {
+          "value": 0,
+          "max": 3
+        },
+        "hitlegs": {
+          "value": 0,
+          "max": 3
+        },
+        "defense": {
+          "value": 0
+        },
+        "power": {
+          "value": 100,
+          "max": 100
         }
       },
       "effort": {
