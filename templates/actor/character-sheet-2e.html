@@ -48,7 +48,7 @@
                     </div>
 
                     {{!-- Stats --}}
-                    {{#each (icrpg-array "str" "dex" "con") as |id|}}
+                    {{#each (icrpg-array "str" "dex" "con" "int" "wis" "cha") as |id|}}
                     {{#with (lookup ../data.data.stats id) as |stat|}}
                     <div class="resource stat {{id}}">
                         <label for="data.stats.{{id}}.value" class="resource-label rollable"
@@ -66,33 +66,7 @@
                     </div>
                     {{/with}}
                     {{/each}}   
-
-                    {{!-- Header --}}
-                    <div class="resource stat resource-header">
-                        <span class="header">{{localize "ICRPG.Stats"}}</span>
-                        <span class="header">{{localize "ICRPG.Base"}}</span>
-                        <span class="header">{{localize "ICRPG.Loot"}}</span>
-                    </div>
-
-                    {{!-- Stats --}}
-                    {{#each (icrpg-array "int" "wis" "cha") as |id|}}
-                    {{#with (lookup ../data.data.stats id) as |stat|}}
-                    <div class="resource stat {{id}}">
-                        <label for="data.stats.{{id}}.value" class="resource-label rollable"
-                            data-roll='1d20+{{stat.value}}'
-                            data-label='{{localize (icrpg-concat "ICRPG." (icrpg-toUpperCase id))}}'>
-                            {{localize (icrpg-concat "ICRPG." (icrpg-toUpperCase id))}}
-                        </label>
-                        <div class="resource-content flexrow flex-center flex-between">
-                            <span class="value"
-                                name="data.stats.{{id}}.value">{{numberFormat stat.value decimals=0 sign=false}}</span>
-                            <input type="text" name="data.stats.{{id}}.base" value="{{stat.base}}"
-                                data-dtype="Number" />
-                            <span class="base">{{numberFormat stat.loot decimals=0 sign=false}}</span>
-                        </div>
-                    </div>
-                    {{/with}}
-                    {{/each}}                       
+                      
                 </div>
                 <div class="resources">
                     {{!-- Header --}}
@@ -409,22 +383,22 @@
                     {{!-- Header --}}
                     <div class="resource stat resource-header">
                         <span class="header">{{localize "ICRPG.Stats"}}</span>
-                        <span class="header">{{localize "ICRPG.Base"}}</span>
+                        <span class="header">{{localize "ICRPG.Suit"}}</span>
                         <span class="header">{{localize "ICRPG.Loot"}}</span>
                     </div>
 
-                    {{!-- Stats --}}
+                    {{!-- Hard Suit Stats --}}
                     {{#each (icrpg-array "str" "dex" "con") as |id|}}
                     {{#with (lookup ../data.data.hardsuit id) as |stat|}}
                     <div class="resource stat {{id}}">
                         <label for="data.hardsuit.{{id}}.value" class="resource-label rollable"
-                            data-roll='1d20+{{stat.value}}'
+                            data-roll='1d20+{{icrpg-sum data.hardsuit.{{id}}.base data.hardsuit.{{id}}.loot}}'
                             data-label='{{localize (icrpg-concat "ICRPG." (icrpg-toUpperCase id))}}'>
                             {{localize (icrpg-concat "ICRPG." (icrpg-toUpperCase id))}}
                         </label>
                         <div class="resource-content flexrow flex-center flex-between">
                             <span class="value"
-                                name="data.hardsuit.{{id}}.value">{{numberFormat stat.value decimals=0 sign=false}}</span>
+                                name="data.hardsuit.{{id}}.value">{{numberFormat {{icrpg-sum data.hardsuit.{{id}}.base data.hardsuit.{{id}}.loot}} decimals=0 sign=false}}</span>
                             <input type="text" name="data.hardsuit.{{id}}.base" value="{{stat.base}}"
                                 data-dtype="Number" />
                             <input type="text" name="data.hardsuit.{{id}}.loot" value="{{stat.loot}}"
@@ -434,92 +408,51 @@
                     {{/with}}
                     {{/each}}   
 
-                    {{!-- Stats --}}
-                    {{#each (icrpg-array "int" "wis" "cha") as |id|}}
-                    {{#with (lookup ../data.data.stats id) as |stat|}}
-                    <div class="resource stat {{id}}">
-                        <label for="data.stats.{{id}}.value" class="resource-label rollable"
-                            data-roll='1d20+{{stat.value}}'
-                            data-label='{{localize (icrpg-concat "ICRPG." (icrpg-toUpperCase id))}}'>
-                            {{localize (icrpg-concat "ICRPG." (icrpg-toUpperCase id))}}
+                   {{!-- Header --}}
+                    <div class="resource stat resource-header">
+                        <span class="header">{{localize "ICRPG.Stats"}}</span>
+                        <span class="header">{{localize "ICRPG.Base"}}</span>
+                        <span class="header">{{localize "ICRPG.Loot"}}</span>
+                    </div>
+
+                    {{!-- Character Stats --}}
+                    <div class="resource stat int">
+                        <label for="data.effort.basic.value" class="resource-label rollable"
+                            data-roll='1d20+{{data.data.stats.int.value}}'
+                            data-label='{{localize "ICRPG.INT"}}'>
+                            {{localize "ICRPG.INT"}}
                         </label>
                         <div class="resource-content flexrow flex-center flex-between">
-                            <span class="value"
-                                name="data.stats.{{id}}.value">{{numberFormat stat.value decimals=0 sign=false}}</span>
-                            <input type="text" name="data.stats.{{id}}.base" value="{{stat.base}}"
-                                data-dtype="Number" />
-                            <span class="base">{{numberFormat stat.loot decimals=0 sign=false}}</span>
+                            <span class="value" name="data.stats.int.value">{{data.data.stats.int.value}}</span>
+                            <span class="base">{{numberFormat data.data.stats.int.base decimals=0 sign=false}}</span>
+                            <span class="base">{{numberFormat data.data.stats.int.loot decimals=0 sign=false}}</span>
                         </div>
-                    </div>
-                    {{/with}}
-                    {{/each}}                       
+                    </div>                     
+                    
                 </div>
                 <div class="resources">
                     {{!-- Header --}}
                     <div class="resource effort resource-header">
                         <span class="header">{{localize "ICRPG.Effort"}}</span>
                         <span class="header">{{localize "ICRPG.Base"}}</span>
-                        <span class="header">{{localize "ICRPG.Loot"}}</span>
+                        <span class="header">{{localize "ICRPG.Suit"}}</span>
                     </div>
 
-                    {{!-- Effort --}}
-                    {{#each (icrpg-array "basic" "weapon" "gun" "magic" "ultimate") as |id|}}
-                    {{#with (lookup ../data.data.effort id) as |eff|}}
-                    <div class="resource effort {{id}}">
-                        <label for="data.effort.{{id}}.value" class="resource-label {{eff.die}} rollable"
-                            data-roll='1{{eff.die}}+{{eff.value}}'
-                            data-label='{{localize (icrpg-concat "ICRPG.Effort" (icrpg-capitalize id))}}'>
-                            {{localize (icrpg-concat "ICRPG.Effort" (icrpg-capitalize id))}}
+                    <div class="resource effort basic">
+                        <label for="data.effort.basic.value" class="resource-label d4 rollable"
+                            data-roll='1d4+{{icrpg-sum data.data.effort.basic.base data.data.hardsuit.basic.value}}'
+                            data-label='{{localize "ICRPG.EffortBasic"}}'>
+                            {{localize "ICRPG.EffortBasic"}}
                         </label>
                         <div class="resource-content flexrow flex-center flex-between">
-                            <span class="value"
-                                name="data.effort.{{id}}.value">{{numberFormat eff.value decimals=0 sign=false}}</span>
-                            <input type="text" name="data.effort.{{id}}.base" value="{{eff.base}}"
-                                data-dtype="Number" />
-                            <span class="base">{{numberFormat eff.loot decimals=0 sign=false}}</span>
+                            <span class="value" name="data.effort.basic.value">{{icrpg-sum data.data.effort.basic.base data.data.hardsuit.basic.value}}</span>
+                            <span class="base">{{numberFormat data.data.effort.basic.base decimals=0 sign=false}}</span>
+                            <input type="text" name="data.hardsuit.basic.value" value="{{data.data.hardsuit.basic.value}}" data-dtype="Number" />
                         </div>
-                    </div>
-                    {{/with}}
-                    {{/each}}
+                    </div>                    
                 </div>
             </div>
-            <div class="attributes-content grid-2col">
-                <div class="resources">
-                    {{!-- Header --}}
-                    <div class="resource armor resource-header">
-                        <span class="header">
-                            <!--{{localize "ICRPG.Defense"}}--></span>
-                    </div>
-
-                    {{!-- Armor --}}
-                    <div class="resource armor">
-                        <label for="data.hardsuite.defense.value" class="resource-label rollable"
-                            data-roll='1d20+{{icrpg-sum data.data.hardsuit.con.value data.data.hardsuit.defense.value}}'
-                            data-label='{{localize "ICRPG.Defense"}}'>
-                            {{localize "ICRPG.Defense"}} </label>
-                        <div class="resource-content flexrow flex-center flex-between">
-                            <span class="value">{{icrpg-sum data.data.hardsuit.con.value data.data.hardsuit.defense.value}}</span>
-                            <input type="text" title='{{localize "ICRPG.CON"}}' value="{{data.data.hardsuit.con.value}}" data-dtype="Number" disabled/>
-                            <input type="text" title='{{localize "ICRPG.Hardsuit"}}' value="{{data.data.hardsuit.defense.value}}" data-dtype="Number" disabled/>
-                        </div>
-                    </div>    
-
-                    {{!-- Header --}}
-                    <div class="resource coin resource-header">
-                        <span class="header">
-                            <!--{{localize "ICRPG.Resources"}}--></span>
-                    </div>
-
-                    {{!-- Power --}}
-                    <div class="resource">
-                        <label for="data.hardsuit.power.value" class="resource-label"> {{localize "ICRPG.Power"}} </label>
-                        <div class="resource-content flexrow flex-center flex-between">
-                            <input type="text" name="data.hardsuit.power.value" value="{{data.data.hardsuit.power.value}}" data-dtype="Number" />
-                            <span class="separator">/</span>
-                            <input type="text" name="data.data.hardsuit.power.max" value="{{data.data.hardsuit.power.max}}" data-dtype="Number" />
-                        </div>
-                    </div>  
-                </div>
+            <div class="attributes-content grid-2-3-col">
                 <div class="resources">
                     {{!-- Header --}}
                     <div class="resource coin resource-header">
@@ -565,6 +498,43 @@
                         </div>
                     </div>                   
                 </div>
+
+                <div class="resources">
+                    {{!-- Header --}}
+                    <div class="resource armor resource-header">
+                        <span class="header">
+                            <!--{{localize "ICRPG.Defense"}}--></span>
+                    </div>
+
+                    {{!-- Armor --}}
+                    <div class="resource armor">
+                        <label for="data.hardsuite.defense.value" class="resource-label rollable"
+                            data-roll='1d20+{{icrpg-sum data.data.hardsuit.con.value data.data.hardsuit.defense.value}}'
+                            data-label='{{localize "ICRPG.Defense"}}'>
+                            {{localize "ICRPG.Defense"}} </label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <span class="value">{{icrpg-sum data.data.hardsuit.con.value data.data.hardsuit.defense.value}}</span>
+                            <input type="text" title='{{localize "ICRPG.CON"}}' value="{{data.data.hardsuit.con.value}}" data-dtype="Number"/>
+                            <input type="text" title='{{localize "ICRPG.Hardsuit"}}' value="{{data.data.hardsuit.defense.value}}" data-dtype="Number"/>
+                        </div>
+                    </div>    
+
+                    {{!-- Header --}}
+                    <div class="resource coin resource-header">
+                        <span class="header">
+                            <!--{{localize "ICRPG.Resources"}}--></span>
+                    </div>
+
+                    {{!-- Power --}}
+                    <div class="resource">
+                        <label for="data.hardsuit.power.value" class="resource-label"> {{localize "ICRPG.Power"}} </label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input type="text" name="data.hardsuit.power.value" value="{{data.data.hardsuit.power.value}}" data-dtype="Number" />
+                            <span class="separator">/</span>
+                            <input type="text" name="data.data.hardsuit.power.max" value="{{data.data.hardsuit.power.max}}" data-dtype="Number" />
+                        </div>
+                    </div>  
+                </div>                
             </div>
         </div>
 
