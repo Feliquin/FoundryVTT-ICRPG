@@ -889,3 +889,27 @@ h4.dice-total.icrpg-fail {
 .icrpg .landing {
   justify-content: space-between;
 }
+
+/* Dice Roller */
+.dice-roll .dice-result.dice-result {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dice-roll .dice-formula.dice-formula {
+  flex: 0 0 65%;
+  min-height: 32px;
+  line-height: 32px;
+}
+
+.dice-roll .dice-total.dice-total {
+  flex: 0 0 calc(35% - 10px);
+  min-height: 32px;
+  line-height: 32px;
+  height: 32px;
+  margin-left: 10px;
+}
+
+.dice-roll .dice-tooltip.dice-tooltip.expanded {
+  margin-top: 5px;
+}
