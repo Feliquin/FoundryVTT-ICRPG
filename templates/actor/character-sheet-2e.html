@@ -387,37 +387,7 @@
                     </div>
 
                     {{!-- Stats --}}
-                    <div class="resource stat str">
-                        <label for="data.hardsuit.str.value" class="resource-label rollable"
-                            data-roll='1d20+{{data.data.hardsuit.str.value}}'
-                            data-label='{{localize (icrpg-concat "ICRPG." (icrpg-toUpperCase id))}}'>
-                            {{localize (icrpg-concat "ICRPG." (icrpg-toUpperCase id))}}
-                        </label>
-                        <div class="resource-content flexrow flex-center flex-between">
-                            <span class="value"
-                                name="data.hardsuit.str.value">{{numberFormat data.data.hardsuit.str.value decimals=0 sign=false}}</span>
-                            <input type="text" name="data.hardsuit.str.value" value="{{data.data.hardsuit.str.value}}"
-                                data-dtype="Number" />
-                            <span class="base">&ndash;</span>
-                        </div>
-                    </div>   
-
-                    <div class="resource stat dex">
-                        <label for="data.hardsuit.dex.value" class="resource-label rollable"
-                            data-roll='1d20+{{data.data.hardsuit.dex.value}}'
-                            data-label='{{localize (icrpg-concat "ICRPG." (icrpg-toUpperCase id))}}'>
-                            {{localize (icrpg-concat "ICRPG." (icrpg-toUpperCase id))}}
-                        </label>
-                        <div class="resource-content flexrow flex-center flex-between">
-                            <span class="value"
-                                name="data.hardsuit.dex.value">{{numberFormat data.data.hardsuit.dex.value decimals=0 sign=false}}</span>
-                            <input type="text" name="data.hardsuit.dex.value" value="{{data.data.hardsuit.dex.value}}"
-                                data-dtype="Number" />
-                            <span class="base">&ndash;</span>
-                        </div>
-                    </div>        
-
-                    {{#each (icrpg-array "con" "int" "wis" "cha") as |id|}}
+                    {{#each (icrpg-array "str" "dex" "con" "int" "wis" "cha") as |id|}}
                     {{#with (lookup ../data.data.stats id) as |stat|}}
                     <div class="resource stat {{id}}">
                         <label for="data.stats.{{id}}.value" class="resource-label rollable"
@@ -428,7 +398,8 @@
                         <div class="resource-content flexrow flex-center flex-between">
                             <span class="value"
                                 name="data.stats.{{id}}.value">{{numberFormat stat.value decimals=0 sign=false}}</span>
-                            <span class="base">{{numberFormat stat.base decimals=0 sign=false}}</span>
+                            <input type="text" name="data.stats.{{id}}.base" value="{{stat.base}}"
+                                data-dtype="Number" />
                             <span class="base">{{numberFormat stat.loot decimals=0 sign=false}}</span>
                         </div>
                     </div>
