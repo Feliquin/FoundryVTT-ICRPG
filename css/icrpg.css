@@ -480,6 +480,10 @@ input::-moz-selection {
   text-shadow: none;
 }
 
+.icrpg .resource-content {
+  flex: 1 1 100%;
+}
+
 .icrpg .resource.death > .resource-content {
   position: relative;
   margin-left: 60px;
