@@ -88,6 +88,29 @@
           "loot": 0
         }
       },
+      "hardsuit": {
+        "str": {
+          "value": 0
+        },
+        "dex": {
+          "value": 0
+        },
+        "base": {
+          "value": 0
+        },
+        "weapon": {
+          "value": 0
+        },
+        "gun": {
+          "value": 0
+        },
+        "magic": {
+          "value": 0
+        },
+        "ultimate": {
+          "value": 0
+        }
+      },
       "effort": {
         "basic": {
           "base": 0,

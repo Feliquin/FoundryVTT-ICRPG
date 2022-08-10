@@ -159,6 +159,15 @@ Hooks.once('init', async function () {
     default: true
   });
 
+  game.settings.register("icrpg", "showHardsuitTab", {
+    name: "ICRPG.showHardsuitTabSetting",
+    hint: "",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: false
+  });
+
   game.settings.register("icrpg", "useSurge", {
     name: "ICRPG.useSurgeSetting",
     hint: "",
@@ -272,14 +281,13 @@ Hooks.on("getChatLogEntryContext", (html, options) => {
 });
 
 Hooks.on("renderItemSheet", (app, html, appData) => {
-  console.log('renderItemSheet');
   if (game.settings.get("icrpg", "itemDurability")) html.find(`label[for="data.durability"]`).closest(`div.grid`).remove();
   if (game.settings.get("icrpg", "spellMastery")) html.find(`label[for="data.mastery"]`).closest(`div.grid`).remove();
   if (game.settings.get("icrpg", "abilityMastery")) html.find(`label[for="data.mastery"]`).closest(`div.grid`).remove();
 });
 
 Hooks.on("renderIcrpgCharacterSheet", (app, html, appData) => {
-  console.log('renderIcrpgCharacterSheet');
   if (!game.settings.get("icrpg", "useGrit")) html.find(`.js-grit`).remove();
   if (!game.settings.get("icrpg", "useSurge")) html.find(`.js-surge`).remove();
+  if (!game.settings.get("icrpg", "showHardsuitTab")) html.find(`.js-hardsuit`).remove();
 });
