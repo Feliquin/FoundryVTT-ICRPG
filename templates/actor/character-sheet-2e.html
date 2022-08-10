@@ -389,18 +389,13 @@
 
                     {{!-- Hard Suit Stats --}}
                     <div class="resource stat str">
-                        <label for="data.hardsuit.str.value" class="resource-label rollable"
-                            data-roll='1d20+{{icrpg-sum data.hardsuit.str.base data.hardsuit.str.loot}}'
-                            data-label='{{localize "ICRPG.STR"}}'>
+                        <label for="data.hardsuit.str.value" class="resource-label rollable" data-roll='1d20+{{icrpg-sum data.data.hardsuit.str.base data.data.hardsuit.str.loot}}' data-label='{{localize "ICRPG.STR"}}'>
                             {{localize "ICRPG.STR"}}
                         </label>
                         <div class="resource-content flexrow flex-center flex-between">
-                            <span class="value"
-                                name="data.hardsuit.str.value">{{icrpg-sum data.hardsuit.str.base data.hardsuit.str.loot}}</span>
-                            <input type="text" name="data.hardsuit.str.base" value="{{stat.base}}"
-                                data-dtype="Number" />
-                            <input type="text" name="data.hardsuit.str.loot" value="{{stat.loot}}"
-                                data-dtype="Number" />
+                            <span class="value" name="data.hardsuit.str.value">{{icrpg-sum data.data.hardsuit.str.base data.data.hardsuit.str.loot}}</span>
+                            <input type="text" name="data.hardsuit.str.base" value="{data.data.hardsuit.str.base}}" data-dtype="Number" />
+                            <input type="text" name="data.hardsuit.str.loot" value="{{data.data.hardsuit.str.loot}}" data-dtype="Number" />
                         </div>
                     </div>
 
@@ -413,13 +408,13 @@
 
                     {{!-- Character Stats --}}
                     <div class="resource stat int">
-                        <label for="data.effort.basic.value" class="resource-label rollable"
+                        <label for="data.stats.int.value" class="resource-label rollable"
                             data-roll='1d20+{{data.data.stats.int.value}}'
                             data-label='{{localize "ICRPG.INT"}}'>
                             {{localize "ICRPG.INT"}}
                         </label>
                         <div class="resource-content flexrow flex-center flex-between">
-                            <span class="value" name="data.stats.int.value">{{data.data.stats.int.value}}</span>
+                            <span class="value" name="data.stats.int.value">{{numberFormat data.data.stats.int.value decimals=0 sign=false}}</span>
                             <span class="base">{{numberFormat data.data.stats.int.base decimals=0 sign=false}}</span>
                             <span class="base">{{numberFormat data.data.stats.int.loot decimals=0 sign=false}}</span>
                         </div>
