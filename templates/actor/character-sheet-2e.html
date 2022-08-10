@@ -166,6 +166,16 @@
                         </div>
                     </div>
 
+                    {{!-- Stun --}}
+                    <div class="resource health js-stun">
+                        <label for="data.stun.value" class="resource-label"> {{localize "ICRPG.Stun"}} </label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input type="text" name="data.stun.value" value="{{data.data.stun.value}}"
+                                data-dtype="Number" />
+                        </div>
+                    </div>
+
+
                     {{!-- Header --}}
                     <div class="resource death resource-header">
                         <span class="header">

@@ -102,6 +102,7 @@
     "ICRPG.spellMasterySetting": "Disable Spell Mastery",
     "ICRPG.abilityMasterySetting": "Disable Ability Mastery",
     "ICRPG.useGritSetting": "Use Grit (D6)",
+    "ICRPG.useStunSetting": "Use Stun Points",
     "ICRPG.useSurgeSetting": "Use Surge (D8)",
     "ICRPG.showHardsuitTabSetting": "Show Hard Suit tab",
     "ICRPG.Shield": "Shield",

@@ -159,6 +159,15 @@ Hooks.once('init', async function () {
     default: true
   });
 
+  game.settings.register("icrpg", "useStun", {
+    name: "ICRPG.useStunSetting",
+    hint: "",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: true
+  });
+
   game.settings.register("icrpg", "showHardsuitTab", {
     name: "ICRPG.showHardsuitTabSetting",
     hint: "",
@@ -287,6 +296,7 @@ Hooks.on("renderItemSheet", (app, html, appData) => {
 });
 
 Hooks.on("renderIcrpgCharacterSheet", (app, html, appData) => {
+  if (!game.settings.get("icrpg", "useStun")) html.find(`.js-stun`).remove();
   if (!game.settings.get("icrpg", "useGrit")) html.find(`.js-grit`).remove();
   if (!game.settings.get("icrpg", "useSurge")) html.find(`.js-surge`).remove();
   if (!game.settings.get("icrpg", "showHardsuitTab")) html.find(`.js-hardsuit`).remove();
