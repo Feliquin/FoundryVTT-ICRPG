@@ -89,6 +89,7 @@
         }
       },
       "hardsuit": {
+        "description": "<br><br>STR, DEX, CON check: roll D100. Roll UNDER current POWER to succeed and use 10% power. Roll 5% or less to succeed with no POWER use. Roll 95% or higher to fail AND uses 10% POWER.",
         "str": {
           "loot": 0,
           "base": 0

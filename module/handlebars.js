@@ -56,6 +56,10 @@ export class IcrpgRegisterHelpers {
             }
         });
 
+        Handlebars.registerHelper("icrpg-summax10", function (a, b) {
+            return ((a + b) < 10) ? (a + b) : 10 ;
+        });
+
         Handlebars.registerHelper("icrpg-sum", function (a, b) {
             return a + b;
         });
