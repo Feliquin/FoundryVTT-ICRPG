@@ -666,6 +666,16 @@ input::-moz-selection {
   margin-right: 10px;
 }
 
+.icrpg .powerroll,
+.icrpg .items-list .item-controls .item-loot {
+  background-image: url("../images/d100.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 25px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
 .icrpg .items-list .item-controls .item-loot:hover {
   -webkit-filter: drop-shadow(0 0 5px red);
           filter: drop-shadow(0 0 5px red);
