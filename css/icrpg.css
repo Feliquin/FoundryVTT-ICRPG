@@ -676,6 +676,11 @@ input::-moz-selection {
   margin-right: 10px;
 }
 
+.icrpg .powerroll {
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
 .icrpg .items-list .item-controls .item-loot:hover {
   -webkit-filter: drop-shadow(0 0 5px red);
           filter: drop-shadow(0 0 5px red);

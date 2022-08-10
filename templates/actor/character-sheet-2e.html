@@ -390,7 +390,7 @@
 
                     {{!-- Hard Suit Stats --}}
                     <div class="resource stat str">
-                        <label for="data.hardsuit.str.value" class="resource-label rollable" data-roll='1d20+{{icrpg-summax10 data.data.hardsuit.str.base data.data.hardsuit.str.loot}}' data-label='{{localize "ICRPG.STR"}}'>
+                        <label for="data.hardsuit.str.value" class="resource-label rollable" data-roll='1d20+{{icrpg-summax10 data.data.hardsuit.str.base data.data.hardsuit.str.loot}}' data-label='{{localize "ICRPG.Hardsuit"}} {{localize "ICRPG.STR"}}'>
                             {{localize "ICRPG.STR"}}
                         </label>
                         <div class="resource-content flexrow flex-center flex-between">
@@ -400,7 +400,7 @@
                         </div>
                     </div>
                     <div class="resource stat dex">
-                        <label for="data.hardsuit.dex.value" class="resource-label rollable" data-roll='1d20+{{icrpg-summax10 data.data.hardsuit.dex.base data.data.hardsuit.dex.loot}}' data-label='{{localize "ICRPG.DEX"}}'>
+                        <label for="data.hardsuit.dex.value" class="resource-label rollable" data-roll='1d20+{{icrpg-summax10 data.data.hardsuit.dex.base data.data.hardsuit.dex.loot}}' data-label='{{localize "ICRPG.Hardsuit"}} {{localize "ICRPG.DEX"}}'>
                             {{localize "ICRPG.DEX"}}
                         </label>
                         <div class="resource-content flexrow flex-center flex-between">
@@ -410,7 +410,7 @@
                         </div>
                     </div>
                     <div class="resource stat con">
-                        <label for="data.hardsuit.con.value" class="resource-label rollable" data-roll='1d20+{{icrpg-summax10 data.data.hardsuit.con.base data.data.hardsuit.con.loot}}' data-label='{{localize "ICRPG.CON"}}'>
+                        <label for="data.hardsuit.con.value" class="resource-label rollable" data-roll='1d20+{{icrpg-summax10 data.data.hardsuit.con.base data.data.hardsuit.con.loot}}' data-label='{{localize "ICRPG.Hardsuit"}} {{localize "ICRPG.CON"}}'>
                             {{localize "ICRPG.CON"}}
                         </label>
                         <div class="resource-content flexrow flex-center flex-between">
@@ -477,7 +477,7 @@
                     <div class="resource effort basic">
                         <label for="data.effort.basic.value" class="resource-label d4 rollable"
                             data-roll='1d4+{{icrpg-summax10 data.data.effort.basic.base data.data.hardsuit.basic.value}}'
-                            data-label='{{localize "ICRPG.EffortBasic"}}'>
+                            data-label='{{localize "ICRPG.Hardsuit"}} {{localize "ICRPG.EffortBasic"}}'>
                             {{localize "ICRPG.EffortBasic"}}
                         </label>
                         <div class="resource-content flexrow flex-center flex-between">
@@ -489,7 +489,7 @@
                     <div class="resource effort weapon">
                         <label for="data.effort.weapon.value" class="resource-label d6 rollable"
                             data-roll='1d6+{{icrpg-summax10 data.data.effort.weapon.base data.data.hardsuit.weapon.value}}'
-                            data-label='{{localize "ICRPG.EffortWeapon"}}'>
+                            data-label='{{localize "ICRPG.Hardsuit"}} {{localize "ICRPG.EffortWeapon"}}'>
                             {{localize "ICRPG.EffortWeapon"}}
                         </label>
                         <div class="resource-content flexrow flex-center flex-between">
@@ -501,7 +501,7 @@
                     <div class="resource effort gun">
                         <label for="data.effort.gun.value" class="resource-label d8 rollable"
                             data-roll='1d8+{{icrpg-summax10 data.data.effort.gun.base data.data.hardsuit.gun.value}}'
-                            data-label='{{localize "ICRPG.EffortGun"}}'>
+                            data-label='{{localize "ICRPG.Hardsuit"}} {{localize "ICRPG.EffortGun"}}'>
                             {{localize "ICRPG.EffortGun"}}
                         </label>
                         <div class="resource-content flexrow flex-center flex-between">
@@ -513,7 +513,7 @@
                     <div class="resource effort magic">
                         <label for="data.effort.magic.value" class="resource-label d10 rollable"
                             data-roll='1d10+{{icrpg-summax10 data.data.effort.magic.base data.data.hardsuit.magic.value}}'
-                            data-label='{{localize "ICRPG.EffortMagic"}}'>
+                            data-label='{{localize "ICRPG.Hardsuit"}} {{localize "ICRPG.EffortMagic"}}'>
                             {{localize "ICRPG.EffortMagic"}}
                         </label>
                         <div class="resource-content flexrow flex-center flex-between">
@@ -525,7 +525,7 @@
                     <div class="resource effort ultimate">
                         <label for="data.effort.ultimate.value" class="resource-label d12 rollable"
                             data-roll='1d12+{{icrpg-summax10 data.data.effort.ultimate.base data.data.hardsuit.ultimate.value}}'
-                            data-label='{{localize "ICRPG.EffortUltimate"}}'>
+                            data-label='{{localize "ICRPG.Hardsuit"}} {{localize "ICRPG.EffortUltimate"}}'>
                             {{localize "ICRPG.EffortUltimate"}}
                         </label>
                         <div class="resource-content flexrow flex-center flex-between">
@@ -594,7 +594,7 @@
                     <div class="resource armor">
                         <label for="data.hardsuite.defense.value" class="resource-label rollable"
                             data-roll='1d20+{{icrpg-sum data.data.hardsuit.con.value data.data.hardsuit.defense.value}}'
-                            data-label='{{localize "ICRPG.Defense"}}'>
+                            data-label='{{localize "ICRPG.Hardsuit"}} {{localize "ICRPG.Defense"}}'>
                             {{localize "ICRPG.Defense"}} </label>
                         <div class="resource-content flexrow flex-center flex-between">
                             <span class="value">{{icrpg-sum data.data.hardsuit.con.value data.data.hardsuit.defense.value}}</span>
@@ -611,7 +611,7 @@
 
                     {{!-- Power --}}
                     <div class="resource">
-                        <label for="data.hardsuit.power.value" class="resource-label powerroll rollable" data-roll='1d100'}}'> {{localize "ICRPG.Power"}} </label>
+                        <label for="data.hardsuit.power.value" class="resource-label powerroll rollable" data-label='{{localize "ICRPG.Hardsuit"}} {{localize "ICRPG.Power"}}' data-roll='1d100'}}'>{{localize "ICRPG.Power"}}</label>
                         <div class="resource-content flexrow flex-center flex-between">
                             <input type="text" name="data.hardsuit.power.value" value="{{data.data.hardsuit.power.value}}" data-dtype="Number" />
                             <span class="separator">/</span>
