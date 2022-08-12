@@ -37,7 +37,7 @@ export class IcrpgRegisterHelpers {
         });
 
         Handlebars.registerHelper('icrpg-preview', function (content, length) {
-            return TextEditor.previewHTML(decodeHTML(content), Number(length));
+            return TextEditor.previewHTML(TextEditor.decodeHTML(content), Number(length));
         });
 
         Handlebars.registerHelper('icrpg-array', function() {
