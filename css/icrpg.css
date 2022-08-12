@@ -159,8 +159,8 @@ input::-moz-selection {
 }
 
 .icrpg.sheet.item {
-  min-width: 375px;
-  min-height: 375px;
+  min-width: 450px;
+  min-height: 400px;
 }
 
 .icrpg.sheet.item .item-form .sheet-body {
