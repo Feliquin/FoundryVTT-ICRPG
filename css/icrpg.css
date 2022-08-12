@@ -572,8 +572,9 @@ input::-moz-selection {
 }
 
 .icrpg .tabs .item {
-  line-height: 40px;
+  line-height: 26px;
   font-weight: bold;
+  overflow: hidden;
 }
 
 .icrpg .tabs .item.active {

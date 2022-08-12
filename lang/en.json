@@ -112,6 +112,8 @@
     "ICRPG.Medium": "Medium",
     "ICRPG.Large": "Large",
     "ICRPG.Massive": "Massive",
+    "ICRPG.Main": "Main",
+    "ICRPG.Extras": "Extras",
     "ICRPG.Speed": "Speed",
     "ICRPG.Hardpoints": "Hardpoints",
     "ICRPG.Crew": "Crew",
