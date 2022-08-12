@@ -37,14 +37,9 @@ export class IcrpgRegisterHelpers {
         });
 
         Handlebars.registerHelper('icrpg-preview', function (content, length) {
-            console.log('----');
-            console.log('c', content);
             var output = TextEditor.decodeHTML(content);
-            console.log('o1', output);
             output = output.replace(/(<([^>]+)>)/gi, "");
-            console.log('o2', output);
             output = output.replace(/(\r\n|\n|\r)/gm, " ");
-            console.log('o3', output);
             return TextEditor.previewHTML(output, Number(length));
         });
 
