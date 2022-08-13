@@ -885,6 +885,16 @@ input::-moz-selection {
   justify-content: center;
 }
 
+#icrpg-globalDCinput .targets {
+  display: flex;
+  margin-top: 6px;
+}
+
+#icrpg-globalDCinput .settarget {
+  background-color: #dc0000;
+  color: #fff;
+}
+
 
 /* Global Timer */
 #icrpg-globalTimer .window-header {
@@ -906,7 +916,6 @@ input::-moz-selection {
   line-height: 105px;
   text-align: center;
 }
-
 
 
 /* Roll Pass/Fail Flagging */

@@ -79,11 +79,11 @@ class GlobalDCConfig extends Application {
             globalDC: game.settings.get("icrpg", "globalDC")
         };
     }
-
+ 
     activateListeners(html) {
         super.activateListeners(html);
 
-        html.find("button").click(() => {
+        html.find("button.submit").click(() => {
             const input = html.find("input");
             const val = input.val();
             const globalDC = parseInt(val);
@@ -91,6 +91,54 @@ class GlobalDCConfig extends Application {
 
             this.close();
         });
+
+        html.find("button.target-10").click(() => {
+            const input = html.find("input");
+
+            game.settings.set("icrpg", "globalDC", 10);
+            input.val(10);
+            this.close();            
+        });        
+
+        html.find("button.target-12").click(() => {
+            const input = html.find("input");
+
+            game.settings.set("icrpg", "globalDC", 12);
+            input.val(12);
+            this.close();            
+        });        
+
+        html.find("button.target-14").click(() => {
+            const input = html.find("input");
+
+            game.settings.set("icrpg", "globalDC", 14);
+            input.val(14);
+            this.close();            
+        });        
+
+        html.find("button.target-16").click(() => {
+            const input = html.find("input");
+
+            game.settings.set("icrpg", "globalDC", 16);
+            input.val(16);
+            this.close();            
+        });        
+
+        html.find("button.target-18").click(() => {
+            const input = html.find("input");
+
+            game.settings.set("icrpg", "globalDC", 18);
+            input.val(18);
+            this.close();            
+        });        
+
+        html.find("button.target-20").click(() => {
+            const input = html.find("input");
+
+            game.settings.set("icrpg", "globalDC", 20);
+            input.val(20);
+            this.close();            
+        });        
     }
 
     async _render(force = false, options = {}) {
