@@ -474,7 +474,7 @@ input::-moz-selection {
   background-image: url("../images/heart.svg");
 }
 
-.icrpg .resource.stun.health > .resource-label {
+.icrpg .resource.stun > .resource-label {
   background-image: url("../images/lightning.svg");
 }
 
