@@ -220,7 +220,7 @@ Hooks.once('init', async function () {
   Actors.registerSheet("icrpg", IcrpgNpcSheet, { types: ["npc"] });
   Actors.registerSheet("icrpg", IcrpgVehicleSheet2E, { types: ["vehicle"], makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("icrpg", IcrpgItemSheet, { types: ["item", "weapon", "armor", "spell", "gun"], makeDefault: true });
+  Items.registerSheet("icrpg", IcrpgItemSheet, { types: ["item", "weapon", "armor", "spell", "gun", "augment"], makeDefault: true });
   Items.registerSheet("icrpg", IcrpgAbilitySheet, { types: ["ability"], makeDefault: true });
 
   IcrpgRegisterHelpers.init();

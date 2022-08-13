@@ -56,6 +56,7 @@
       "templates": [
         "base"
       ],
+      "rules": "",
       "class": "",
       "bioform": "",
       "story": "",
@@ -280,6 +281,8 @@
         "shield": 0
       },
       "speed": 0,
+      "rage": 0,
+      "fury": 0,
       "hardpoints": 0,
       "landing": false,
       "crew": 0

@@ -11,9 +11,10 @@
   font-family: "Pangolin", cursive;
 }
 
-.rollable:hover, .rollable:focus {
+.rollable:hover, 
+.rollable:focus {
   color: #000;
-  text-shadow: 0 0 10px red;
+  text-shadow: 0 0 10px #157;
   cursor: pointer;
 }
 
@@ -410,8 +411,8 @@ input::-moz-selection {
 
 .icrpg .resource.effort > .resource-label:hover,
 .icrpg .resource.armor > .resource-label.rollable:hover {
-  -webkit-filter: drop-shadow(0 0 5px red);
-          filter: drop-shadow(0 0 5px red);
+  -webkit-filter: drop-shadow(0 0 5px #157);
+          filter: drop-shadow(0 0 5px #157);
   text-shadow: none;
 }
 
