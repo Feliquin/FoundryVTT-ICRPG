@@ -311,6 +311,7 @@ input::-moz-selection {
 }
 
 .icrpg .resource.resource-header.armor > .header:first-child,
+.icrpg .resource.resource-header.stun > .header:first-child,
 .icrpg .resource.resource-header.health > .header:first-child,
 .icrpg .resource.resource-header.stun > .header:first-child,
 .icrpg .resource.resource-header.death > .header:first-child {
@@ -419,6 +420,7 @@ input::-moz-selection {
   padding-left: 30px;
 }
 
+.icrpg .resource.stun > .resource-label,
 .icrpg .resource.health > .resource-label {
   -webkit-box-flex: 1;
   flex: 1 0 100px;
