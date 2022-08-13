@@ -143,8 +143,8 @@ input::-moz-selection {
 }
 
 .icrpg.sheet.actor {
-  min-width: 470px;
-  min-height: 650px;
+  min-width: 476px;
+  min-height: 700px;
   /*character-form: 475px; npc-form: 375px;*/
 }
 
@@ -233,8 +233,14 @@ input::-moz-selection {
   overflow-y: auto;
 }
 
+.sheet .editor-content {
+  height: auto;
+  min-height: 50px;
+}
+
 .icrpg .sheet-body .tab .editor {
-  height: 100%;
+  height: auto;
+  min-height: 50px;
 }
 
 .icrpg .tox .tox-editor-container {
