@@ -76,6 +76,7 @@
     "ICRPG.Target": "Target",
     "ICRPG.GlobalTimer": "Timer",
     "ICRPG.SetGlobalTimer": "Set Timer",
+    "ICRPG.ReduceGlobalTimer": "Reduce Timer",
     "ICRPG.Timer": "Timer",
     "ICRPG.Durability": "Durability",
     "ICRPG.EffortHit": "{actorName} hits{targetName}with {itemName}.",

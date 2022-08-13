@@ -773,10 +773,16 @@ input::-moz-selection {
   justify-content: center;
 }
 
+#icrpg-globalTimerinput .container .child {
+  font-size: 72px;
+  color: transparent;
+  line-height: 150px;
+}
+
 #icrpg-globalDC .container .child {
   font-size: 72px;
   color: transparent;
-  line-height: 105px;
+  line-height: 115px;
 }
 
 #icrpg-globalDC .container {
