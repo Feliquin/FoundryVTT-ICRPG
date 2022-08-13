@@ -443,7 +443,11 @@ input::-moz-selection {
   padding-left: 30px;
 }
 
-.icrpg .resource.rage .resource-label.d6,
+.icrpg .resource.rage .resource-label.d6 {
+  background-image: url("../images/d6.svg");
+  padding-left: 30px;
+}
+
 .icrpg .resource.effort > .resource-label.d6 {
   background-image: url("../images/d6.svg");
 }
