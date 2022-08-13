@@ -95,7 +95,7 @@ class GlobalTimerConfig extends Application {
 
         html.find("button.reduce").click(() => {
             const input = html.find("input");
-            const val = input.val();
+            const val = game.settings.get("icrpg", "globalTimer");
             let globalTimer = parseInt(val);
 
             globalTimer = ((globalTimer - 1) > 0) ? (globalTimer - 1) : 0;
