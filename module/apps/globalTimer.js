@@ -98,7 +98,7 @@ class GlobalTimerConfig extends Application {
             const val = input.val();
             let globalTimer = parseInt(val);
 
-            globalTimer = ((globalTime - 1) > 0) ? (globalTime - 1) : 0;
+            globalTimer = ((globalTimer - 1) > 0) ? (globalTimer - 1) : 0;
             input.val(globalTimer);
             game.settings.set("icrpg", "globalTimer", globalTimer);
 
