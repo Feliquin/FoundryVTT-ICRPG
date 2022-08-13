@@ -83,11 +83,24 @@ class GlobalTimerConfig extends Application {
     activateListeners(html) {
         super.activateListeners(html);
 
-        html.find("button").click(() => {
+        html.find("button.submit").click(() => {
             const input = html.find("input");
             const val = input.val();
             const globalTimer = parseInt(val);
             if (globalTimer) game.settings.set("icrpg", "globalTimer", globalTimer);
+
+            this.close();
+        });
+
+
+        html.find("button.reduce").click(() => {
+            const input = html.find("input");
+            const val = input.val();
+            let globalTimer = parseInt(val);
+
+            globalTimer = ((globalTime - 1) > 0) ? (globalTime - 1) : 0;
+            input.val(globalTimer);
+            game.settings.set("icrpg", "globalTimer", globalTimer);
 
             this.close();
         });
