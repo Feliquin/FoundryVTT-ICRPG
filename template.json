@@ -207,7 +207,8 @@
         "value": 0
       },
       "stun": {
-        "value": 10
+        "value": 10,
+        "max": 10
       },
       "herocoin": false
     },
@@ -275,7 +276,6 @@
         "loot": 0
       },
       "stun": 10,
-      "stunmax": 10,
       "size": "none",
       "class": "",
       "health": {
