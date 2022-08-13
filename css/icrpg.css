@@ -795,6 +795,24 @@ input::-moz-selection {
   background-color: #888888;
 }
 
+#icrpg-globalDC .container.target-8 {
+  display: flex;
+  background-image: url("../images/Target-8.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 1px;
+  justify-content: center;
+}
+
+#icrpg-globalDC .container.target-9 {
+  display: flex;
+  background-image: url("../images/Target-9.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 1px;
+  justify-content: center;
+}
+
 #icrpg-globalDC .container.target-11 {
   display: flex;
   background-image: url("../images/Target-11.png");
