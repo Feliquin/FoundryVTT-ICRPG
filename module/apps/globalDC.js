@@ -87,6 +87,17 @@ class GlobalDCConfig extends Application {
             const input = html.find("input");
             const val = input.val();
             const globalDC = parseInt(val);
+
+            if (!globalDC) {
+                globalDC = 10;
+            }
+            if (globalDC > 20) {
+                globalDC = 20;
+            }
+            if (globalDC < 8) {
+                globalDC = 8;
+            }
+
             if (globalDC) game.settings.set("icrpg", "globalDC", globalDC);
 
             this.close();
