@@ -340,6 +340,22 @@ input::-moz-selection {
   flex: 1 0 65px;
 }
 
+.icrpg .resource.rage > .resource-label,
+.icrpg .resource.fury > .resource-label {
+  -webkit-box-flex: 1;
+  flex: 0 0 130px;
+}
+
+.icrpg .resource.rage > .resource-content,
+.icrpg .resource.fury > .resource-content {
+    flex: 0 0 60px;
+}
+
+.icrpg .resource.rage .resource-label.d6 {
+  background-image: url("../images/d6.svg");
+  padding-left: 30px;
+}
+
 .icrpg .resource.effort > .resource-label {
   -webkit-box-flex: 1;
   flex: 1 0 135px;
