@@ -90,12 +90,15 @@ class GlobalDCConfig extends Application {
 
             if (!globalDC) {
                 globalDC = 10;
+                input.val(10);
             }
             if (globalDC > 20) {
                 globalDC = 20;
+                input.val(20);
             }
             if (globalDC < 8) {
                 globalDC = 8;
+                input.val(8);
             }
 
             if (globalDC) game.settings.set("icrpg", "globalDC", globalDC);
