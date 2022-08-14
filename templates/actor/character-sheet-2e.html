@@ -377,7 +377,9 @@
             <div class="resource fury">
                 <label for="data.fury.value" class="resource-label" data-label='{{localize "ICRPG.BattleFury"}}'>{{localize "ICRPG.BattleFury"}}</label>
                 <div class="resource-content">
-                    <input type="text" name="data.fury" value="{{data.data.fury}}" data-dtype="Number" />
+                    <input type="text" name="data.fury" class="data-fury" value="{{data.data.fury}}" data-dtype="Number" />
+                    <span class="fury-plus js-fury-plus" style="margin-right:12px;">+1</span>
+                    <span class="fury-zero js-fury-zero">reset</span>
                 </div>
             </div>   
 

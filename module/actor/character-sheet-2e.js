@@ -22,7 +22,32 @@ export class IcrpgCharacterSheet2E extends IcrpgCharacterSheet {
     html.find(".js-rage").on("click", this._onClickRageRoll.bind(this));
     html.find(".js-gritroll").on("click", this._onClickGritRoll.bind(this));
     html.find(".js-surgeroll").on("click", this._onClickSurgeRoll.bind(this));
+    html.find(".js-fury-plus").on("click", this._onClickFuryPlus.bind(this));
+    html.find(".js-fury-zero").on("click", this._onClickFuryReset.bind(this));
   }
+
+  /**
+   * @param {MouseEvent} event
+   * @private
+   */
+  async _onClickFuryReset(event) {
+    this._element.find(".data-fury").val(0).trigger('change');
+  }  
+
+  /**
+   * @param {MouseEvent} event
+   * @private
+   */
+  async _onClickFuryPlus(event) {
+    let myData = this.getData();
+    let myVal = myData.data.data.fury +1;
+
+    if (myVal > 6) {
+      myVal = 6;
+    }
+
+    this._element.find(".data-fury").val(myVal).trigger('change');
+  }  
 
   /**
    * @param {MouseEvent} event

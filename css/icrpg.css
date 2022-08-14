@@ -11,6 +11,9 @@
   font-family: "Pangolin", cursive;
 }
 
+
+.fury-plus:hover,
+.fury-zero:hover,
 .rollable:hover, 
 .rollable:focus {
   color: #000;
