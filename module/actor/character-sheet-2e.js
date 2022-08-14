@@ -27,7 +27,7 @@ export class IcrpgCharacterSheet2E extends IcrpgCharacterSheet {
    * @param {MouseEvent} event    The originating left click event
    * @private
    */
-  async _onClickItemControl(event) {
-    console.log('_onClickItemControl =-=-=-=-=-=-=-=-=-=-=-=-=-=-=', getData());
+  async _onClickRageRoll(event) {
+    console.log('_onClickRageRoll =-=-=-=-=-=-=-=-=-=-=-=-=-=-=', getData());
   }  
 }
