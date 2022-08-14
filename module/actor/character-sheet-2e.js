@@ -29,6 +29,7 @@ export class IcrpgCharacterSheet2E extends IcrpgCharacterSheet {
    */
   async _onClickRageRoll(event) {
     let myData = this.getData();
+    const html = await super.getHTML();
 
     myData.data.data.rage = 0;
     html.find(".data-rage").val(0);
