@@ -32,8 +32,8 @@ export class IcrpgCharacterSheet2E extends IcrpgCharacterSheet {
     const html = await super.getHTML();
 
     myData.data.data.rage = 0;
-    html.find(".data-rage").val(0);
+    // html.find(".data-rage").val(0);
 
-    console.log('_onClickRageRoll =-=-=-=-=-=-=-=-=-=-=-=-=-=-=', myData.data.data.rage);
+    console.log('_onClickRageRoll =-=-=-=-=-=-=-=-=-=-=-=-=-=-=', myData.data.data.rage, event);
   }  
 }
