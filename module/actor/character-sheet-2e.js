@@ -28,6 +28,6 @@ export class IcrpgCharacterSheet2E extends IcrpgCharacterSheet {
    * @private
    */
   async _onClickRageRoll(event) {
-    console.log('_onClickRageRoll =-=-=-=-=-=-=-=-=-=-=-=-=-=-=', getData());
+    console.log('_onClickRageRoll =-=-=-=-=-=-=-=-=-=-=-=-=-=-=', this.getData());
   }  
 }
