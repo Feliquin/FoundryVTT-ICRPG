@@ -22,6 +22,7 @@ export class IcrpgCharacterSheet2E extends IcrpgCharacterSheet {
     html.find(".js-rage").on("click", this._onClickRageRoll.bind(this));
     html.find(".js-gritroll").on("click", this._onClickGritRoll.bind(this));
     html.find(".js-surgeroll").on("click", this._onClickSurgeRoll.bind(this));
+    html.find(".js-rage-plus").on("click", this._onClickRagePlus.bind(this));
     html.find(".js-fury-plus").on("click", this._onClickFuryPlus.bind(this));
     html.find(".js-fury-zero").on("click", this._onClickFuryReset.bind(this));
   }
@@ -32,6 +33,21 @@ export class IcrpgCharacterSheet2E extends IcrpgCharacterSheet {
    */
   async _onClickFuryReset(event) {
     this._element.find(".data-fury").val(0).trigger('change');
+  }  
+
+  /**
+   * @param {MouseEvent} event
+   * @private
+   */
+  async _onClickRagePlus(event) {
+    let myData = this.getData();
+    let myVal = myData.data.data.rage +1;
+
+    if (myVal > 10) {
+      myVal = 10;
+    }
+
+    this._element.find(".data-rage").val(0).trigger('change');
   }  
 
   /**

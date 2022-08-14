@@ -11,7 +11,18 @@
   font-family: "Pangolin", cursive;
 }
 
+.rage-plus,
+.fury-plus {
+  margin-right: 12px;
+  margin-left: 12px;
+  line-height: 25px;
+}
 
+.fury-zero {
+  line-height: 25px;
+}
+
+.rage-plus:hover,
 .fury-plus:hover,
 .fury-zero:hover,
 .rollable:hover, 
