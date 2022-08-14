@@ -135,7 +135,7 @@
           "max": 3
         },
         "defense": {
-          "value": 0
+          "loot": 0
         },
         "power": {
           "value": 100,

@@ -622,14 +622,13 @@
                     {{!-- Armor --}}
                     <div class="resource armor">
                         <label for="data.hardsuite.defense.value" class="resource-label rollable"
-                            data-roll='1d20+{{icrpg-sum3 data.data.hardsuit.con.base data.data.hardsuit.con.loot data.data.hardsuit.defense.value}}'
+                            data-roll='1d20+{{icrpg-sum3 data.data.hardsuit.con.base data.data.hardsuit.con.loot data.data.hardsuit.defense.loot}}'
                             data-label='{{localize "ICRPG.Hardsuit"}} {{localize "ICRPG.Defense"}}'>
                             {{localize "ICRPG.Defense"}} </label>
-                            {{data.data.hardsuit.con.base}} - {{data.data.hardsuit.con.loot}} - {{data.data.hardsuit.defense.value}}
+                            {{data.data.hardsuit.con.base}} - {{data.data.hardsuit.con.loot}} - {{data.data.hardsuit.defense.loot}}
                         <div class="resource-content flexrow flex-center flex-between">
-                            <span class="value">{{icrpg-sum3 data.data.hardsuit.con.base data.data.hardsuit.con.loot data.data.hardsuit.defense.value}}</span>
-                            <input type="text" title='{{localize "ICRPG.CON"}}' value="{{data.data.hardsuit.con.value}}" data-dtype="Number"/>
-                            <input type="text" title='{{localize "ICRPG.Hardsuit"}}' value="{{data.data.hardsuit.defense.value}}" data-dtype="Number"/>
+                            <span class="value">{{icrpg-sum3 data.data.hardsuit.con.base data.data.hardsuit.con.loot data.data.hardsuit.defense.loot}}</span>
+                            <input type="text" title='{{localize "ICRPG.Hardsuit"}}' value="{{data.data.hardsuit.defense.loot}}" data-dtype="Number"/>
                         </div>
                     </div>    
 
