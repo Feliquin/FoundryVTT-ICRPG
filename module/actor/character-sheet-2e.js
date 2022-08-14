@@ -31,7 +31,7 @@ export class IcrpgCharacterSheet2E extends IcrpgCharacterSheet {
     let myData = this.getData();
 
     myData.data.data.rage = 0;
-    this._element.find(".data-rage").val(0);
+    this._element.find(".data-rage").val(0).trigger('change');
 
     console.log('_onClickRageRoll =-=-=-=-=-=-=-=-=-=-=-=-=-=-=', myData.data.data.rage, event);
   }  
