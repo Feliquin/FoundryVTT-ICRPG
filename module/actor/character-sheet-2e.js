@@ -47,7 +47,7 @@ export class IcrpgCharacterSheet2E extends IcrpgCharacterSheet {
       myVal = 10;
     }
 
-    this._element.find(".data-rage").val(0).trigger('change');
+    this._element.find(".data-rage").val(myVal).trigger('change');
   }  
 
   /**
