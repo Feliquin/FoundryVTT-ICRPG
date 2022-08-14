@@ -206,13 +206,11 @@
 
                     {{!-- Surge --}}
                     <div class="resource surge js-surge">
-                        <label for="data.surge.value" class="resource-label d8 {{#if (gt data.data.surge.value 0)}}rollable{{/if}}" data-roll='{{#if (gt data.data.surge.value 0)}}1d8{{/if}}'' data-label='{{localize "ICRPG.Surge"}}'>{{localize "ICRPG.Surge"}}</label>
+                        <label for="data.surge.value" class="resource-label d8 js-surgeroll {{#if (gt data.data.surge.value 0)}}rollable{{/if}}" data-roll='{{#if (gt data.data.surge.value 0)}}1d8{{/if}}'' data-label='{{localize "ICRPG.Surge"}}'>{{localize "ICRPG.Surge"}}</label>
                         <div class="resource-content flexrow flex-center flex-between">
-                            <input type="text" name="data.surge.value" value="{{data.data.surge.value}}"
-                                data-dtype="Number" />
+                            <input type="text" name="data.surge.value" value="{{data.data.surge.value}}" class="data-surge" data-dtype="Number" />
                             <span class="separator">/</span>
-                            <input type="text" name="data.surgemax.value" value="{{data.data.surgemax.value}}"
-                                data-dtype="Number" />
+                            <input type="text" name="data.surgemax.value" value="{{data.data.surgemax.value}}" data-dtype="Number" />
                         </div>
                     </div>  
                 </div>

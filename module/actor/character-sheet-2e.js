@@ -21,6 +21,7 @@ export class IcrpgCharacterSheet2E extends IcrpgCharacterSheet {
 
     html.find(".js-rage").on("click", this._onClickRageRoll.bind(this));
     html.find(".js-gritroll").on("click", this._onClickGritRoll.bind(this));
+    html.find(".js-surgeroll").on("click", this._onClickSurgeRoll.bind(this));
   }
 
   /**
@@ -44,5 +45,20 @@ export class IcrpgCharacterSheet2E extends IcrpgCharacterSheet {
     }
 
     this._element.find(".data-grit").val(myVal).trigger('change');
+  }  
+
+  /**
+   * @param {MouseEvent} event
+   * @private
+   */
+  async _onClickSurgeRoll(event) {
+    let myData = this.getData();
+    let myVal = myData.data.data.surge.value - 1;
+
+    if (myVal < 0) {
+      myVal = 0;
+    }
+
+    this._element.find(".data-surge").val(myVal).trigger('change');
   }  
 }
