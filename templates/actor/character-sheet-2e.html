@@ -387,7 +387,7 @@
 
             {{!-- Rage --}}
             <div class="resource rage">
-                <label for="data.rage.value" class="resource-label d6 {{#if (gt data.data.rage 0)}}rollable{{/if}}" data-roll='{{#if (gt data.data.rage 0)}}{{data.data.rage}}d6{{/if}}' data-label='{{localize "ICRPG.Rage"}}'>{{localize "ICRPG.Rage"}}</label>
+                <label for="data.rage.value" class="js-rage resource-label d6 {{#if (gt data.data.rage 0)}}rollable{{/if}}" data-roll='{{#if (gt data.data.rage 0)}}{{data.data.rage}}d6{{/if}}' data-label='{{localize "ICRPG.Rage"}}'>{{localize "ICRPG.Rage"}}</label>
                 <div class="resource-content">
                     <input type="text" name="data.rage" value="{{data.data.rage}}" data-dtype="Number" />
                 </div>

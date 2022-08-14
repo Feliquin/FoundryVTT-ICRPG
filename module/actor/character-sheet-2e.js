@@ -19,7 +19,15 @@ export class IcrpgCharacterSheet2E extends IcrpgCharacterSheet {
   activateListeners(html) {
     super.activateListeners(html);
 
-    // Item controls
-    //html.find(".abilities").on("click", ".item-control", this._onClickItemControl.bind(this));
+    html.find(".js-rage").on("click", this._onClickRageRoll.bind(this));
   }
+
+  /**
+   * Listen for click events on an attribute control to modify the composition of attributes in the sheet
+   * @param {MouseEvent} event    The originating left click event
+   * @private
+   */
+  async _onClickItemControl(event) {
+    console.log('_onClickItemControl =-=-=-=-=-=-=-=-=-=-=-=-=-=-=', getData());
+  }  
 }
