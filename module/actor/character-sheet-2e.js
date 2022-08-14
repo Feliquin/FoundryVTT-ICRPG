@@ -20,19 +20,29 @@ export class IcrpgCharacterSheet2E extends IcrpgCharacterSheet {
     super.activateListeners(html);
 
     html.find(".js-rage").on("click", this._onClickRageRoll.bind(this));
+    html.find(".js-gritroll").on("click", this._onClickGritRoll.bind(this));
   }
 
   /**
-   * Listen for click events on an attribute control to modify the composition of attributes in the sheet
-   * @param {MouseEvent} event    The originating left click event
+   * @param {MouseEvent} event
    * @private
    */
   async _onClickRageRoll(event) {
-    let myData = this.getData();
-
-    myData.data.data.rage = 0;
     this._element.find(".data-rage").val(0).trigger('change');
+  }  
 
-    console.log('_onClickRageRoll =-=-=-=-=-=-=-=-=-=-=-=-=-=-=', myData.data.data.rage, event);
+  /**
+   * @param {MouseEvent} event
+   * @private
+   */
+  async _onClickGritRoll(event) {
+    let myData = this.getData();
+    let myVal = myData.data.data.grit.value - 1;
+
+    if (myVal < 0) {
+      myVal = 0;
+    }
+
+    this._element.find(".data-grit").val(myVal).trigger('change');
   }  
 }

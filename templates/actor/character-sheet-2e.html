@@ -196,13 +196,11 @@
                     
                     {{!-- Grit --}}
                     <div class="resource grit js-grit">
-                        <label for="data.grit.value" class="resource-label d6 {{#if (gt data.data.grit.value 0)}}rollable{{/if}}" data-roll='{{#if (gt data.data.grit.value 0)}}1d6{{/if}}' data-label='{{localize "ICRPG.Grit"}}'>{{localize "ICRPG.Grit"}}</label>
+                        <label for="data.grit.value" class="resource-label d6 js-gritroll {{#if (gt data.data.grit.value 0)}}rollable{{/if}}" data-roll='{{#if (gt data.data.grit.value 0)}}1d6{{/if}}' data-label='{{localize "ICRPG.Grit"}}'>{{localize "ICRPG.Grit"}}</label>
                         <div class="resource-content flexrow flex-center flex-between">
-                            <input type="text" name="data.grit.value" value="{{data.data.grit.value}}"
-                                data-dtype="Number" />
+                            <input type="text" name="data.grit.value" value="{{data.data.grit.value}}" class="data-grit" data-dtype="Number" />
                             <span class="separator">/</span>
-                            <input type="text" name="data.gritmax.value" value="{{data.data.gritmax.value}}"
-                                data-dtype="Number" />
+                            <input type="text" name="data.gritmax.value" value="{{data.data.gritmax.value}}" data-dtype="Number" />
                         </div>
                     </div>    
 
