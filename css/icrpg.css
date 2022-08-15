@@ -249,12 +249,12 @@ input::-moz-selection {
 
 .sheet .editor-content {
   height: auto;
-  min-height: 50px;
+  min-height: 260px;
 }
 
 .icrpg .sheet-body .tab .editor {
   height: auto;
-  min-height: 50px;
+  min-height: 260px;
 }
 
 .icrpg .tox .tox-editor-container {

@@ -2,6 +2,9 @@ export class IcrpgChatMessage extends ChatMessage {
     async _preCreate(data, options, user) {
 
         if (!foundry.utils.hasProperty(this.data, "flags.icrpg.pass")) {
+            
+            console.log('=-= IcrpgChatMessage', this);
+            
             if (this.roll?.terms[0].faces === 20) {
                 const globalDC = game.settings.get("icrpg", "globalDC");
                 const pass = this.roll.total >= globalDC;
