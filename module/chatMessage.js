@@ -2,9 +2,19 @@ export class IcrpgChatMessage extends ChatMessage {
     async _preCreate(data, options, user) {
 
         if (!foundry.utils.hasProperty(this.data, "flags.icrpg.pass")) {
-            
+            /*
+            Unfinished: Can't figure out how to access actor data
+            Goal: When rolling for power show if successful; update power value
+            ---
             console.log('=-= IcrpgChatMessage', this);
             
+            if (this.data?.flavor.includes("Hard Suit Power")) {
+                console.log('-> power');
+                const globalDC = game.settings.get("icrpg", "globalDC");
+                const pass = this.roll.total >= globalDC;
+                this.data.update({ "flags.icrpg": { pass } });
+            }
+            */
             if (this.roll?.terms[0].faces === 20) {
                 const globalDC = game.settings.get("icrpg", "globalDC");
                 const pass = this.roll.total >= globalDC;
