@@ -175,7 +175,7 @@ input::-moz-selection {
 
 .icrpg.sheet.item {
   min-width: 450px;
-  min-height: 400px;
+  min-height: 545px;
 }
 
 .icrpg.sheet.item .item-form .sheet-body {
@@ -249,12 +249,12 @@ input::-moz-selection {
 
 .sheet .editor-content {
   height: auto;
-  min-height: 260px;
+  min-height: 210px;
 }
 
 .icrpg .sheet-body .tab .editor {
   height: auto;
-  min-height: 260px;
+  min-height: 210px;
 }
 
 .icrpg .tox .tox-editor-container {
