@@ -125,5 +125,6 @@
     "ICRPG.Landing": "Landung",
     "ICRPG.Use": "Verwende",
     "ICRPG.heartHPsetting": "NSC verwenden Herz TP",
-    "ICRPG.CRITICAL": "[ KRITISCH ] "    
+    "ICRPG.CRITICAL": "[ KRITISCH ] ",
+    "ICRPG.Modifier": "Modifikator"    
 }

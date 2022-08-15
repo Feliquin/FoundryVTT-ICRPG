@@ -124,5 +124,6 @@
     "ICRPG.Landing": "Landing",
     "ICRPG.Use": "Use",
     "ICRPG.heartHPsetting": "NPCs Use Heart HP",
-    "ICRPG.CRITICAL": "[ CRITICAL ] "
+    "ICRPG.CRITICAL": "[ CRITICAL ] ",
+    "ICRPG.Modifier": "Modifier"
 }

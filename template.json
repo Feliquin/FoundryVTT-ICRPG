@@ -167,7 +167,8 @@
       "armor": {
         "value": 0,
         "base": 0,
-        "loot": 0
+        "loot": 0,
+        "modifier": 0
       },
       "coin": {
         "value": 0
