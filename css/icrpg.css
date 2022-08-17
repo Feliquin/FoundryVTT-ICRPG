@@ -210,6 +210,7 @@ input::-moz-selection {
 }
 
 .icrpg .items-list .item img,
+.icrpg .items-list .item .item-image,
 .compendium.directory .directory-item img,
 .sheet.item .sheet-header .profile-img {
   background-color: #aa0033;
