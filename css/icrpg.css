@@ -60,7 +60,7 @@ input::-moz-selection {
   grid-column: span 2 / span 2;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 5px;
-  margin: 5px 0;
+  margin: 0 0 5px;
   padding: 0;
 }
 
@@ -209,6 +209,13 @@ input::-moz-selection {
   margin-right: 10px;
 }
 
+.icrpg .items-list .item img,
+.compendium.directory .directory-item img,
+.icrpg .sheet.item .sheet-header .profile-img {
+  background-color: #aa0033;
+  border: none;
+}
+
 .icrpg .sheet-header .header-fields {
   -webkit-box-flex: 1;
   flex: 1;
@@ -222,13 +229,14 @@ input::-moz-selection {
 .icrpg .sheet-header h1.charname {
   height: 40px;
   padding: 0px;
-  margin: 5px 0;
+  margin: 0 0 5px;
   border-bottom: 0;
 }
 
 .icrpg .sheet-header h1.charname input {
   width: 100%;
-  height: 100%;
+  height: 38px;
+  line-height: 38px;
   margin: 0;
 }
 
