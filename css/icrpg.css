@@ -207,6 +207,12 @@ input::-moz-selection {
   flex: 0 0 100px;
   height: 100px;
   margin-right: 10px;
+  border: 2px dotted #00000018;
+  border-radius: 3px;
+}
+
+.icrpg .sheet-header .profile-img:hover {
+  border: 2px dotted #00000099;
 }
 
 .icrpg .items-list .item img,
