@@ -18,8 +18,15 @@ export class IcrpgChatMessage extends ChatMessage {
             if (this.roll?.terms[0].faces === 20) {
                 const globalDC = game.settings.get("icrpg", "globalDC");
                 console.log('roll', this.roll);
-                const pass = this.roll.total >= globalDC;
+
+                const pass = (this.roll.total >= globalDC) && (this.roll.terms[0].results[0].result !== 1);
                 this.data.update({ "flags.icrpg": { pass } });
+
+                const critical = this.roll.terms[0].results[0].result === 20;
+                this.data.update({ "flags.icrpg": { critical } });
+
+                const fail = this.roll.terms[0].results[0].result === 1;
+                this.data.update({ "flags.icrpg": { fail } });
             }
         }
 
