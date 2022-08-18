@@ -990,18 +990,30 @@ h4.dice-total.icrpg-fail {
 
 .flavor-text.icrpg-totalfail-text::after {
   content: ' CRITICAL FAIL';
+  font-weight: 900;
+  color: #aa0000;
+  padding-left: 10px;
 }
 
 .flavor-text.icrpg-fail-text::after {
   content: ' FAIL';
+  font-weight: 900;
+  color: #aa0000;
+  padding-left: 10px;
 }
 
 .flavor-text.icrpg-critical-text::after {
   content: ' CRITICAL SUCCESS';
+  font-weight: 900;
+  color: #007700;
+  padding-left: 10px;
 }
 
 .flavor-text.icrpg-pass-text::after {
   content: ' SUCCESS';
+  font-weight: 900;
+  color: #007700;
+  padding-left: 10px;
 }
 
 .dialog-content .icrpg.form-group {
