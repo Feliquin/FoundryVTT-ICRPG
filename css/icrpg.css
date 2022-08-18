@@ -212,9 +212,10 @@ input::-moz-selection {
 }
 
 .icrpg .sheet-header .profile-img:hover {
-  border: 2px dotted #00000099;
+  border: 2px dotted #00000044;
 }
 
+.chat-message .table-draw .table-results .table-result img.result-image,
 .icrpg .items-list .item img,
 .icrpg .items-list .item .item-image,
 .compendium.directory .directory-item img,
