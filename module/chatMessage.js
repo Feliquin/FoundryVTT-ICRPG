@@ -17,7 +17,6 @@ export class IcrpgChatMessage extends ChatMessage {
             */
             if (this.roll?.terms[0].faces === 20) {
                 const globalDC = game.settings.get("icrpg", "globalDC");
-                console.log('roll', this.roll);
 
                 const pass = (this.roll.total >= globalDC) && (this.roll.terms[0].results[0].result !== 1);
                 this.data.update({ "flags.icrpg": { pass } });
@@ -38,10 +37,20 @@ export class IcrpgChatMessage extends ChatMessage {
         
         const icrpgFlags = this.data.flags.icrpg || {};
         const passInFlags = "pass" in icrpgFlags;
+        const failInFlag = "fail" in icrpgFlags;
+        const criticalInFlag = "critical" in icrpgFlags;
+
         if (!passInFlags) return html;
 
-        if (this.data.flags.icrpg.pass) html.find("h4.dice-total").addClass("icrpg-pass");
-        else html.find("h4.dice-total").addClass("icrpg-fail");
+        if (this.data.flags.icrpg.fail) {
+            html.find("h4.dice-total").addClass("icrpg-totalfail");
+        } else if (this.data.flags.icrpg.critical) {
+            html.find("h4.dice-total").addClass("icrpg-critical");
+        } else if (this.data.flags.icrpg.pass) {
+            html.find("h4.dice-total").addClass("icrpg-pass");
+        } else {
+            html.find("h4.dice-total").addClass("icrpg-fail");
+        }
 
         return html;
     }
