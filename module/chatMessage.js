@@ -43,12 +43,16 @@ export class IcrpgChatMessage extends ChatMessage {
         if (!passInFlags) return html;
 
         if (this.data.flags.icrpg.fail) {
+            html.find(".flavor-text").addClass("icrpg-totalfail-text");
             html.find("h4.dice-total").addClass("icrpg-totalfail");
         } else if (this.data.flags.icrpg.critical) {
+            html.find(".flavor-text").addClass("icrpg-critical-text");
             html.find("h4.dice-total").addClass("icrpg-critical");
         } else if (this.data.flags.icrpg.pass) {
+            html.find(".flavor-text").addClass("icrpg-pass-text");
             html.find("h4.dice-total").addClass("icrpg-pass");
         } else {
+            html.find(".flavor-text").addClass("icrpg-fail-text");
             html.find("h4.dice-total").addClass("icrpg-fail");
         }
 

@@ -973,17 +973,35 @@ h4.dice-total.icrpg-pass {
 
 h4.dice-total.icrpg-totalfail {
     background-color: rgb(215 1 1 / 80%);
+    border-color: #aa0000;
     color: #fff;
 }
 
 h4.dice-total.icrpg-critical {
     background-color: rgb(1 168 1 / 80%);
+    border-color: #007700;
     color: #fff;
 }
 
 h4.dice-total.icrpg-fail {
   background-color: rgb(255 1 1 / 41%)
 
+}
+
+.flavor-text.icrpg-totalfail-text::after {
+  content: ' CRITICAL FAIL';
+}
+
+.flavor-text.icrpg-fail-text::after {
+  content: ' FAIL';
+}
+
+.flavor-text.icrpg-critical-text::after {
+  content: ' CRITICAL SUCCESS';
+}
+
+.flavor-text.icrpg-pass-text::after {
+  content: ' SUCCESS';
 }
 
 .dialog-content .icrpg.form-group {
