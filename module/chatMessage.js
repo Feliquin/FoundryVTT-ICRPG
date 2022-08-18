@@ -17,6 +17,7 @@ export class IcrpgChatMessage extends ChatMessage {
             */
             if (this.roll?.terms[0].faces === 20) {
                 const globalDC = game.settings.get("icrpg", "globalDC");
+                console.log('roll', this.roll);
                 const pass = this.roll.total >= globalDC;
                 this.data.update({ "flags.icrpg": { pass } });
             }
