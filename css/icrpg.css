@@ -224,7 +224,7 @@ input::-moz-selection {
   border: none;
 }
 
-.icrpg .result-text.result-text {
+.result-text.result-text {
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
