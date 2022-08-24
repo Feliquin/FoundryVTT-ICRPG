@@ -300,6 +300,11 @@ input::-moz-selection {
   flex-direction: column;
 }
 
+.icrpg .ressources.ressources.nointeraction {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .icrpg .attributes-content .resources:last-child {
   margin-right: 5px;
 }
