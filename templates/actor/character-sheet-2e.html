@@ -640,7 +640,7 @@
 
                     {{!-- Power --}}
                     <div class="resource">
-                        <label for="data.hardsuit.power.value" class="resource-label powerroll rollable" data-label='{{localize "ICRPG.Hardsuit"}} {{localize "ICRPG.Power"}}' data-roll='1d100'}}'>{{localize "ICRPG.Power"}}</label>
+                        <label for="data.hardsuit.power.value" class="resource-label powerroll rollable" data-label='{{localize "ICRPG.Hardsuit"}} {{localize "ICRPG.Power"}}' data-roll='1d100'>{{localize "ICRPG.Power"}}</label>
                         <div class="resource-content flexrow flex-center flex-between">
                             <input type="text" name="data.hardsuit.power.value" value="{{data.data.hardsuit.power.value}}" data-dtype="Number" />
                             <span class="separator">/</span>
@@ -648,6 +648,23 @@
                         </div>
                     </div>  
                 </div>                
+            </div>
+            <div class="attributes-content grid-2-3-col">
+                <div class="resources">
+                    {{!-- Header --}}
+                    <div class="resource coin resource-header">
+                        <span class="header">
+                            <!--{{localize "ICRPG.Resources"}}--></span>
+                    </div>
+
+                    {{!-- HasSuit --}}
+                    <div class="resource">
+                        <label for="data.hardsuit.hassuit.value" class="resource-label">{{localize "ICRPG.Power"}}</label>
+                        <div class="resource-content flexrow flex-center flex-between">
+                            <input type="checkbox" name="data.hardsuit.hassuit.value" value="{{data.data.hardsuit.hassuit.value}}" {{#if data.data.hardsuit.hassuit.value}}checked{{/if}} />
+                        </div>
+                    </div>                      
+                </div>
             </div>
         </div>
 

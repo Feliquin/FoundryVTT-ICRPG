@@ -118,20 +118,23 @@
         "ultimate": {
           "value": 0
         },
+        "hassuit": {
+          "value": true
+        },
         "hitcore": {
-          "value": 0,
+          "value": 3,
           "max": 3
         },
         "hitright": {
-          "value": 0,
+          "value": 3,
           "max": 3
         },
         "hitleft": {
-          "value": 0,
+          "value": 3,
           "max": 3
         },
         "hitlegs": {
-          "value": 0,
+          "value": 3,
           "max": 3
         },
         "armor": {
