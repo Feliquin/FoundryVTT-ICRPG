@@ -119,7 +119,7 @@
           "value": 0
         },
         "hassuit": {
-          "value": true
+          "value": false
         },
         "hitcore": {
           "value": 3,

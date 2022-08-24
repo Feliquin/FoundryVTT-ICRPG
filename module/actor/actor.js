@@ -12,6 +12,9 @@ export class IcrpgActor extends Actor {
     if (["character", "vehicle"].includes(this.data.type)) {
       for (let [id, stat] of Object.entries(data.stats)) {
         stat.value = Number(stat.base) + Number(stat.loot);
+        if (stat.value > 10) {
+          stat.value = 10;
+        }
       }
 
       for (let [id, eff] of Object.entries(data.effort)) {
