@@ -300,7 +300,7 @@ input::-moz-selection {
   flex-direction: column;
 }
 
-.icrpg .ressources.ressources.nointeraction {
+.icrpg .resources.resources.nointeraction {
   opacity: 0.5;
   pointer-events: none;
 }
