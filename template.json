@@ -118,8 +118,8 @@
         "ultimate": {
           "value": 0
         },
-        "hassuit": {
-          "value": false
+        "hasnosuit": {
+          "value": true
         },
         "hitcore": {
           "value": 3,

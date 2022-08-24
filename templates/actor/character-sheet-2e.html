@@ -410,7 +410,7 @@
         {{!-- Hard Suit Tab --}}
         <div class="tab hardsuit js-hardsuit" data-group="primary" data-tab="hardsuit">
             <div class="attributes-content grid-2-3-col">
-                <div class="resources {{#if !data.data.hardsuit.hassuit.value}}nointeraction{{/if}}">
+                <div class="resources {{#if data.data.hardsuit.hasnosuit.value}}nointeraction{{/if}}">
                     {{!-- Header --}}
                     <div class="resource stat resource-header">
                         <span class="header">{{localize "ICRPG.Stats"}}</span>
@@ -495,7 +495,7 @@
                         </div>
                     </div>                     
                 </div>
-                <div class="resources {{#if !data.data.hardsuit.hassuit.value}}nointeraction{{/if}}">
+                <div class="resources {{#if data.data.hardsuit.hasnosuit.value}}nointeraction{{/if}}">
                     {{!-- Header --}}
                     <div class="resource effort resource-header">
                         <span class="header">{{localize "ICRPG.Effort"}}</span>
@@ -566,7 +566,7 @@
                 </div>
             </div>
             <div class="attributes-content grid-2-3-col">
-                <div class="resources {{#if !data.data.hardsuit.hassuit.value}}nointeraction{{/if}}">
+                <div class="resources {{#if data.data.hardsuit.hasnosuit.value}}nointeraction{{/if}}">
                     {{!-- Header --}}
                     <div class="resource coin resource-header">
                         <span class="header">
@@ -612,7 +612,7 @@
                     </div>                   
                 </div>
 
-                <div class="resources {{#if !data.data.hardsuit.hassuit.value}}nointeraction{{/if}}">
+                <div class="resources {{#if data.data.hardsuit.hasnosuit.value}}nointeraction{{/if}}">
                     {{!-- Header --}}
                     <div class="resource armor resource-header">
                         <span class="header"><!--{{localize "ICRPG.Defense"}}--></span>
@@ -658,9 +658,9 @@
 
                     {{!-- HasSuit --}}
                     <div class="resource">
-                        <label for="data.hardsuit.hassuit.value" class="resource-label">{{localize "ICRPG.HasSuit"}}</label>
+                        <label for="data.hardsuit.hasnosuit.value" class="resource-label">{{localize "ICRPG.HasNoSuit"}}</label>
                         <div class="resource-content flexrow flex-center flex-between">
-                            <input type="checkbox" name="data.hardsuit.hassuit.value" value="{{data.data.hardsuit.hassuit.value}}" {{#if !data.data.hardsuit.hassuit.value}}checked{{/if}} />
+                            <input type="checkbox" name="data.hardsuit.hasnosuit.value" value="{{data.data.hardsuit.hasnosuit.value}}" {{#if data.data.hardsuit.hasnosuit.value}}checked{{/if}} />
                         </div>
                     </div>                      
                 </div>
