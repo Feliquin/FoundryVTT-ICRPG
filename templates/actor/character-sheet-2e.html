@@ -409,6 +409,7 @@
 
         {{!-- Hard Suit Tab --}}
         <div class="tab hardsuit js-hardsuit" data-group="primary" data-tab="hardsuit">
+            {{#if data.data.hardsuit.hassuit.value}}
             <div class="attributes-content grid-2-3-col">
                 <div class="resources">
 
@@ -649,6 +650,7 @@
                     </div>  
                 </div>                
             </div>
+            {{/if}}
             <div class="attributes-content grid-2-3-col">
                 <div class="resources">
                     {{!-- Header --}}
@@ -659,7 +661,7 @@
 
                     {{!-- HasSuit --}}
                     <div class="resource">
-                        <label for="data.hardsuit.hassuit.value" class="resource-label">{{localize "ICRPG.Power"}}</label>
+                        <label for="data.hardsuit.hassuit.value" class="resource-label">{{localize "ICRPG.HasSuit"}}</label>
                         <div class="resource-content flexrow flex-center flex-between">
                             <input type="checkbox" name="data.hardsuit.hassuit.value" value="{{data.data.hardsuit.hassuit.value}}" {{#if data.data.hardsuit.hassuit.value}}checked{{/if}} />
                         </div>

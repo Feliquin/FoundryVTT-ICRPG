@@ -51,7 +51,6 @@
     "ICRPG.Description": "Beschreibung",
     "ICRPG.Rolling": "Würfelt",
     "ICRPG.Mastery": "Meisterschaft",
-
     "ICRPG.Love": "Liebe",
     "ICRPG.Hate": "Hass",
     "ICRPG.Fear": "Furcht",
@@ -126,5 +125,6 @@
     "ICRPG.Use": "Verwende",
     "ICRPG.heartHPsetting": "NSC verwenden Herz TP",
     "ICRPG.CRITICAL": "[ KRITISCH ] ",
-    "ICRPG.Modifier": "Modifikator"    
+    "ICRPG.Modifier": "Modifikator",
+    "ICRPG.HasSuit": "Besitzt einen Hard Suit"
 }

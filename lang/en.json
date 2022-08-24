@@ -125,5 +125,6 @@
     "ICRPG.Use": "Use",
     "ICRPG.heartHPsetting": "NPCs Use Heart HP",
     "ICRPG.CRITICAL": "[ CRITICAL ] ",
-    "ICRPG.Modifier": "Modifier"
+    "ICRPG.Modifier": "Modifier",
+    "ICRPG.HasSuit": "Has a Hard Suit"
 }
