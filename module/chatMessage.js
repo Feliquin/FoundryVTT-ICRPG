@@ -1,31 +1,18 @@
 export class IcrpgChatMessage extends ChatMessage {
     async _preCreate(data, options, user) {
 
-        if (!foundry.utils.hasProperty(this.data, "flags.icrpg.pass")) {
-            /*
-            Unfinished: Can't figure out how to access actor data
-            Goal: When rolling for power show if successful; update power value
-            ---
-            console.log('=-= IcrpgChatMessage', this);
-            
-            if (this.data?.flavor.includes("Hard Suit Power")) {
-                console.log('-> power');
-                const globalDC = game.settings.get("icrpg", "globalDC");
-                const pass = this.roll.total >= globalDC;
-                this.data.update({ "flags.icrpg": { pass } });
-            }
-            */
-            if (this.roll?.terms[0].faces === 20) {
+        if (!foundry.utils.hasProperty(this, "flags.icrpg.pass")) {
+            if (this.rolls[0].terms[0].faces === 20) {
                 const globalDC = game.settings.get("icrpg", "globalDC");
 
-                const pass = (this.roll.total >= globalDC) && (this.roll.terms[0].results[0].result !== 1);
-                this.data.update({ "flags.icrpg": { pass } });
+                const pass = (this.rolls[0].total >= globalDC) && (this.roll.terms[0].results[0].result !== 1);
+                this.data.updateSource({ "flags.icrpg": { pass } });
 
-                const critical = this.roll.terms[0].results[0].result === 20;
-                this.data.update({ "flags.icrpg": { critical } });
+                const critical = this.rolls[0].terms[0].results[0].result === 20;
+                this.data.updateSource({ "flags.icrpg": { critical } });
 
-                const fail = this.roll.terms[0].results[0].result === 1;
-                this.data.update({ "flags.icrpg": { fail } });
+                const fail = this.rolls[0].terms[0].results[0].result === 1;
+                this.data.updateSource({ "flags.icrpg": { fail } });
             }
         }
 
@@ -35,20 +22,20 @@ export class IcrpgChatMessage extends ChatMessage {
     async getHTML() {
         const html = await super.getHTML();
         
-        const icrpgFlags = this.data.flags.icrpg || {};
+        const icrpgFlags = this.flags.icrpg || {};
         const passInFlags = "pass" in icrpgFlags;
         const failInFlag = "fail" in icrpgFlags;
         const criticalInFlag = "critical" in icrpgFlags;
 
         if (!passInFlags) return html;
 
-        if (this.data.flags.icrpg.fail) {
+        if (this.flags.icrpg.fail) {
             html.find(".flavor-text").addClass("icrpg-totalfail-text");
             html.find("h4.dice-total").addClass("icrpg-totalfail");
-        } else if (this.data.flags.icrpg.critical) {
+        } else if (this.flags.icrpg.critical) {
             html.find(".flavor-text").addClass("icrpg-critical-text");
             html.find("h4.dice-total").addClass("icrpg-critical");
-        } else if (this.data.flags.icrpg.pass) {
+        } else if (this.flags.icrpg.pass) {
             html.find(".flavor-text").addClass("icrpg-pass-text");
             html.find("h4.dice-total").addClass("icrpg-pass");
         } else {

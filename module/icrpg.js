@@ -123,6 +123,14 @@ Hooks.once('init', async function () {
     default: false
   });
 
+  game.settings.register("icrpg", "heartHP", {
+    name: "ICRPG.heartHPsetting",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: false,
+  });
+
   game.settings.register("icrpg", "itemDurability", {
     name: "ICRPG.itemDurabilitySetting",
     hint: "",
@@ -195,7 +203,7 @@ Hooks.once('init', async function () {
   });
 
   // Setup socket handler
-  socket.on("system.icrpg", data => {
+  game.socket.on("system.icrpg", data => {
     if (data.action === "positionGlobalDC") {
       game.icrpg.globalDC.setPosition({
         left: data.position.left * (window.innerWidth - 128),
@@ -290,9 +298,9 @@ Hooks.on("getChatLogEntryContext", (html, options) => {
 });
 
 Hooks.on("renderItemSheet", (app, html, appData) => {
-  if (game.settings.get("icrpg", "itemDurability")) html.find(`label[for="data.durability"]`).closest(`div.grid`).remove();
-  if (game.settings.get("icrpg", "spellMastery")) html.find(`label[for="data.mastery"]`).closest(`div.grid`).remove();
-  if (game.settings.get("icrpg", "abilityMastery")) html.find(`label[for="data.mastery"]`).closest(`div.grid`).remove();
+  if (game.settings.get("icrpg", "itemDurability")) html.find(`label[for="system.durability"]`).closest(`div.grid`).remove();
+  if (game.settings.get("icrpg", "spellMastery")) html.find(`label[for="system.mastery"]`).closest(`div.grid`).remove();
+  if (game.settings.get("icrpg", "abilityMastery")) html.find(`label[for="system.mastery"]`).closest(`div.grid`).remove();
 });
 
 Hooks.on("renderIcrpgCharacterSheet", (app, html, appData) => {

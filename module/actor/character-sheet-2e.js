@@ -41,7 +41,7 @@ export class IcrpgCharacterSheet2E extends IcrpgCharacterSheet {
    */
   async _onClickRagePlus(event) {
     let myData = this.getData();
-    let myVal = myData.data.data.rage +1;
+    let myVal = myData.system.rage +1;
 
     if (myVal > 10) {
       myVal = 10;

@@ -1,12 +1,26 @@
 {
   "name": "icrpg",
+  "id": "icrpg",
   "title": "Index Card RPG - Feliquin Fork",
   "description": "Index Card RPG (ICRPG) system for Foundry VTT (base 3.0.4). Forked by Feliquin.",
-  "version": "0.1.1",
-  "minimumCoreVersion": "9",
-  "compatibleCoreVersion": "9",
+  "version": "3.3.0",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10",
+    "maximum": "10"
+  },
   "templateVersion": 2,
-  "author": "enso#0361",
+  "authors": [
+    {
+      "name": "Jesse Vo",
+      "url": "https://github.com/jessev14",
+      "discord": "enso#0361"
+    },
+    {
+      "name": "Feliquin",
+      "url": "https://github.com/Feliquin"
+    }
+  ],
   "esmodules": [
     "module/icrpg.js"
   ],

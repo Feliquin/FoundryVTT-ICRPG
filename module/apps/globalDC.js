@@ -24,7 +24,7 @@ export class IcrpgGlobalDC extends Application {
                     left: this.position.left,
                     top: this.position.top
                 };
-                socket.emit("system.icrpg", {
+                game.socket.emit("system.icrpg", {
                     action: "positionGlobalDC",
                     position: {
                         left: position.left / (window.innerWidth - 128),
@@ -55,6 +55,9 @@ export class IcrpgGlobalDC extends Application {
         delete ui.windows[this.appId];
     }
 
+    _replaceHTML(element, html) {
+        element.find(".window-content").html(html);
+    }
 }
 
 class GlobalDCConfig extends Application {

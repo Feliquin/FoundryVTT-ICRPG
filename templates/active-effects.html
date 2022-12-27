@@ -8,8 +8,7 @@
         <div class="item-controls" {{#if (eq section.type "unequipped")}} style="visibility: hidden;"{{/if}}>
             <a class="effect-control effect-create" data-action="create"
                 title='{{localize "ICRPG.AddEffect"}}' data-type="ability"><i class="fas fa-plus"></i></a>
-        </div>
-        
+        </div>    
     </li>
 
     <ol class="item-list">
@@ -25,7 +24,7 @@
             <div class="item-controls">
                 
                 <a class="effect-control" data-action="toggle" {{#if (eq section.type "unequipped")}}style="visibility: hidden"{{/if}}
-                    title='{{localize "ICRPG.ToggleEffect"}}'><i class="fas {{#if effect.data.disabled}}fa-check{{else}}fa-times{{/if}}"></i>
+                    title='{{localize "ICRPG.ToggleEffect"}}'><i class="fas {{#if effect.disabled}}fa-check{{else}}fa-times{{/if}}"></i>
                 </a>
                 
                 <a class="effect-control item-edit" data-action="edit"

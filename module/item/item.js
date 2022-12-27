@@ -10,15 +10,15 @@ export class IcrpgItem extends Item {
     super.prepareData();
 
     // Get the Item's data
-    const itemData = this.data;
-    const actorData = this.actor ? this.actor.data : {};
-    const data = itemData.data;
+    const itemData = this;
+    const actorData = this.actor ?? {};
+    const data = itemData.system;
   }
 
   async rollCheck() {
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
 
-    if (!game.settings.get("icrpg", "itemDurability") && this.data.data.durability <= 0) {
+    if (!game.settings.get("icrpg", "itemDurability") && this.system.durability <= 0) {
       ChatMessage.create({
         speaker,
         content: game.i18n.format("ICRPG.BrokenMessage", { character: this.actor.name })
@@ -41,11 +41,12 @@ export class IcrpgItem extends Item {
     }];
 
     const isSpell = this.type === "spell";
-    let useFormula = this.data.data.useFormula || `1d20`;
+    let useFormula = this.system.useFormula || `1d20`;
 
 
     for (const target of targets) {
-      const actorStunPoints = this.actor.data.data.stun.value;
+      const actorStunPoints = this.actor.system.stun.value;
+
       if (isSpell && !actorStunPoints) return ui.notifications.warn(game.i18n.localize("ICRPG.NoStun"));
       const title = this.name + (target.name ? ` - Target: ${target.name}` : ``);
       let content = `
@@ -81,7 +82,7 @@ export class IcrpgItem extends Item {
                 useFormula = useFormula += ` + 3 + ${mod}`;
                 if (isSpell) {
                   power = parseInt(html.find(`select`).val());
-                  const currentStun = this.actor.data.data.stun.value;
+                  const currentStun = this.actor.system.stun.value;
                   const newStun = Math.max(currentStun - power, 0);
                   await this.actor.update({ "data.stun.value": newStun });
                 }
@@ -92,11 +93,11 @@ export class IcrpgItem extends Item {
               label: game.i18n.localize("ICRPG.Normal"),
               callback: async html => {
                 const mod = html.find(`input`).val();
-                //const formula = `1d20` + `${mod}`;
+                // const formula = `1d20` + `${mod}`;
                 useFormula += mod;
                 if (isSpell) {
                   power = parseInt(html.find(`select`).val());
-                  const currentStun = this.actor.data.data.stun.value;
+                  const currentStun = this.actor.system.stun.value;
                   const newStun = Math.max(currentStun - power, 0);
                   await this.actor.update({ "data.stun.value": newStun });
                 }
@@ -111,7 +112,7 @@ export class IcrpgItem extends Item {
                 useFormula += ` - 3 + ${mod}`;
                 if (isSpell) {
                   power = parseInt(html.find(`select`).val());
-                  const currentStun = this.actor.data.data.stun.value;
+                  const currentStun = this.actor.system.stun.value;
                   const newStun = Math.max(currentStun - power, 0);
                   await this.actor.update({ "data.stun.value": newStun });
                 }
@@ -127,7 +128,7 @@ export class IcrpgItem extends Item {
       const d20Roll = await new Roll(d20formula, this.actor.getRollData()).roll();
 
       const isHit = game.settings.get("icrpg", "NPCdefense")
-        ? d20Roll.total >= target.actor.data.data.defense.value
+        ? d20Roll.total >= target.actor.system.defense.value
         : d20Roll.total >= game.settings.get("icrpg", "globalDC");
 
       const messageData = {
@@ -176,7 +177,7 @@ export class IcrpgItem extends Item {
         continue;
       }
 
-      if (isSpell && !this.data.data.effortFormula) continue;
+      if (isSpell && !this.system.effortFormula) continue;
 
       await this.rollEffort(target);
 
@@ -201,7 +202,7 @@ export class IcrpgItem extends Item {
             label: game.i18n.localize("ICRPG.Roll"),
             callback: html => {
               const mod = html.find(`input`).val() || "";
-              const effortFormula = this.data.data.effortFormula + mod;
+              const effortFormula = this.system.effortFormula + mod;
               resolve(effortFormula);
             }
           },
@@ -209,7 +210,7 @@ export class IcrpgItem extends Item {
             label: game.i18n.localize("ICRPG.EffortUltimate"),
             callback: html => {
               const mod = html.find(`input`).val() || "";
-              const effortFormula = this.data.data.effortFormula + `+1d12` + mod;
+              const effortFormula = this.system.effortFormula + `+1d12` + mod;
               resolve(effortFormula);
             }
           }
