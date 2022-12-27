@@ -1,11 +1,12 @@
 export class IcrpgChatMessage extends ChatMessage {
     async _preCreate(data, options, user) {
+        console.log("_preCreate", data, options, user);
 
         if (!foundry.utils.hasProperty(this, "flags.icrpg.pass")) {
             if (this.rolls[0].terms[0].faces === 20) {
                 const globalDC = game.settings.get("icrpg", "globalDC");
 
-                const pass = (this.rolls[0].total >= globalDC) && (this.roll.terms[0].results[0].result !== 1);
+                const pass = (this.rolls[0].total >= globalDC) && (this.rolls[0].terms[0].results[0].result !== 1);
                 this.updateSource({ "flags.icrpg": { pass } });
 
                 const critical = this.rolls[0].terms[0].results[0].result === 20;
@@ -20,7 +21,9 @@ export class IcrpgChatMessage extends ChatMessage {
     }
 
     async getHTML() {
+        console.log('============> TEST');
         const html = await super.getHTML();
+        console.log('HTML', html);
         
         const icrpgFlags = this.flags.icrpg || {};
         const passInFlags = "pass" in icrpgFlags;
