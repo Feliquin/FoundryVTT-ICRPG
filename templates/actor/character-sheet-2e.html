@@ -399,12 +399,12 @@
             <div class="resource stat resource-header">
                 <span class="header">{{localize "ICRPG.Rules"}}</span>
             </div>
-            {{editor content=data.system.rules target="system.rules" button=true owner=owner editable=editable}}
+            {{editor data.system.rules target="system.rules" button=true owner=owner editable=editable}}
         </div>
 
         {{!-- Notes Tab --}}
         <div class="tab description" data-group="primary" data-tab="description">
-            {{editor content=data.system.description target="system.description" button=true owner=owner editable=editable}}
+            {{editor data.system.description target="system.description" button=true owner=owner editable=editable}}
         </div>
 
         {{!-- Hard Suit Tab --}}
@@ -669,7 +669,7 @@
 
         {{!-- Hard Suit Notes Tab --}}
         <div class="tab description" data-group="primary" data-tab="hardsuitnotes">
-            {{editor content=data.system.hardsuit.description target="system.hardsuit.description" button=true owner=owner editable=editable}}
+            {{editor data.system.hardsuit.description target="system.hardsuit.description" button=true owner=owner editable=editable}}
         </div>
 
     </section>
