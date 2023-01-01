@@ -1,4 +1,3 @@
-/*
 export class IcrpgChatMessage extends ChatMessage {
     async _preCreate(data, options, user) {
         console.log("_preCreate", data, options, user);
@@ -51,7 +50,7 @@ export class IcrpgChatMessage extends ChatMessage {
         return html;
     }
 }
-*/
+
 /*
 export class IcrpgChatMessage extends ChatMessage {
   async _preCreate(data, options, user) {
