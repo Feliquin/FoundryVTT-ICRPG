@@ -52,7 +52,7 @@ export class IcrpgChatMessage extends ChatMessage {
     }
 }
 */
-
+/*
 export class IcrpgChatMessage extends ChatMessage {
   async _preCreate(data, options, user) {
     if (!foundry.utils.hasProperty(this, "flags.icrpg.pass")) {
@@ -80,3 +80,4 @@ export class IcrpgChatMessage extends ChatMessage {
     return html;
   }
 }
+*/
